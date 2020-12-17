@@ -1,0 +1,1124 @@
+[gd_scene load_steps=823 format=2]
+
+[ext_resource path="res://pages/page.tscn" type="PackedScene" id=1]
+[ext_resource path="res://resources/fonts/PICO-8 mono.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://resources/fonts/SpaceMono-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://NinePatchRect.tscn" type="PackedScene" id=4]
+[ext_resource path="res://resources/fonts/SpaceMono-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://interface elements/slider/slider.tscn" type="PackedScene" id=6]
+[ext_resource path="res://pages/page 2.gd" type="Script" id=7]
+[ext_resource path="res://resources/textures/gifs/4/framez 1.png" type="Texture" id=8]
+[ext_resource path="res://resources/textures/gifs/4/framez 2.png" type="Texture" id=9]
+[ext_resource path="res://resources/textures/gifs/4/framez 0.png" type="Texture" id=10]
+[ext_resource path="res://resources/textures/gifs/4/framez 46.png" type="Texture" id=11]
+[ext_resource path="res://resources/textures/gifs/4/framez 48.png" type="Texture" id=12]
+[ext_resource path="res://resources/textures/gifs/4/framez 51.png" type="Texture" id=13]
+[ext_resource path="res://resources/textures/gifs/4/framez 60.png" type="Texture" id=14]
+[ext_resource path="res://resources/textures/gifs/4/framez 44.png" type="Texture" id=15]
+[ext_resource path="res://resources/textures/gifs/4/framez 45.png" type="Texture" id=16]
+[ext_resource path="res://resources/textures/gifs/4/framez 13.png" type="Texture" id=17]
+[ext_resource path="res://resources/textures/gifs/4/framez 27.png" type="Texture" id=18]
+[ext_resource path="res://resources/textures/gifs/4/framez 28.png" type="Texture" id=19]
+[ext_resource path="res://resources/textures/gifs/4/framez 37.png" type="Texture" id=20]
+[ext_resource path="res://resources/textures/gifs/4/framez 10.png" type="Texture" id=21]
+[ext_resource path="res://resources/textures/gifs/4/framez 9.png" type="Texture" id=22]
+[ext_resource path="res://resources/textures/gifs/4/framez 11.png" type="Texture" id=23]
+[ext_resource path="res://resources/textures/gifs/4/framez 29.png" type="Texture" id=24]
+[ext_resource path="res://resources/textures/gifs/4/framez 38.png" type="Texture" id=25]
+[ext_resource path="res://resources/textures/gifs/4/framez 39.png" type="Texture" id=26]
+[ext_resource path="res://resources/textures/gifs/4/framez 23.png" type="Texture" id=27]
+[ext_resource path="res://resources/textures/gifs/4/framez 53.png" type="Texture" id=28]
+[ext_resource path="res://resources/textures/gifs/4/framez 54.png" type="Texture" id=29]
+[ext_resource path="res://resources/textures/gifs/4/framez 20.png" type="Texture" id=30]
+[ext_resource path="res://resources/textures/gifs/4/framez 17.png" type="Texture" id=31]
+[ext_resource path="res://resources/textures/gifs/4/framez 31.png" type="Texture" id=32]
+[ext_resource path="res://resources/textures/gifs/4/framez 34.png" type="Texture" id=33]
+[ext_resource path="res://resources/textures/gifs/4/framez 12.png" type="Texture" id=34]
+[ext_resource path="res://resources/textures/gifs/4/framez 40.png" type="Texture" id=35]
+[ext_resource path="res://resources/textures/gifs/4/framez 52.png" type="Texture" id=36]
+[ext_resource path="res://resources/textures/gifs/4/framez 18.png" type="Texture" id=37]
+[ext_resource path="res://resources/textures/gifs/4/framez 15.png" type="Texture" id=38]
+[ext_resource path="res://resources/textures/gifs/4/framez 19.png" type="Texture" id=39]
+[ext_resource path="res://resources/textures/gifs/4/framez 25.png" type="Texture" id=40]
+[ext_resource path="res://resources/textures/gifs/4/framez 41.png" type="Texture" id=41]
+[ext_resource path="res://resources/textures/gifs/4/framez 42.png" type="Texture" id=42]
+[ext_resource path="res://resources/textures/gifs/4/framez 22.png" type="Texture" id=43]
+[ext_resource path="res://resources/textures/gifs/4/framez 50.png" type="Texture" id=44]
+[ext_resource path="res://resources/textures/gifs/4/framez 55.png" type="Texture" id=45]
+[ext_resource path="res://resources/textures/gifs/4/framez 8.png" type="Texture" id=46]
+[ext_resource path="res://resources/textures/gifs/4/framez 49.png" type="Texture" id=47]
+[ext_resource path="res://resources/textures/gifs/4/framez 32.png" type="Texture" id=48]
+[ext_resource path="res://resources/textures/gifs/4/framez 58.png" type="Texture" id=49]
+[ext_resource path="res://resources/textures/gifs/4/framez 33.png" type="Texture" id=50]
+[ext_resource path="res://resources/textures/gifs/4/framez 59.png" type="Texture" id=51]
+[ext_resource path="res://resources/textures/gifs/4/framez 5.png" type="Texture" id=52]
+[ext_resource path="res://resources/textures/gifs/4/framez 30.png" type="Texture" id=53]
+[ext_resource path="res://resources/textures/gifs/4/framez 56.png" type="Texture" id=54]
+[ext_resource path="res://resources/textures/gifs/4/framez 61.png" type="Texture" id=55]
+[ext_resource path="res://resources/textures/gifs/4/framez 62.png" type="Texture" id=56]
+[ext_resource path="res://resources/textures/gifs/4/framez 47.png" type="Texture" id=57]
+[ext_resource path="res://resources/textures/gifs/4/framez 63.png" type="Texture" id=58]
+[ext_resource path="res://resources/textures/gifs/4/framez 64.png" type="Texture" id=59]
+[ext_resource path="res://resources/textures/gifs/4/framez 43.png" type="Texture" id=60]
+[ext_resource path="res://resources/textures/gifs/4/framez 16.png" type="Texture" id=61]
+[ext_resource path="res://resources/textures/gifs/4/framez 57.png" type="Texture" id=62]
+[ext_resource path="res://resources/textures/gifs/4/framez 65.png" type="Texture" id=63]
+[ext_resource path="res://resources/textures/gifs/4/framez 21.png" type="Texture" id=64]
+[ext_resource path="res://resources/textures/gifs/4/framez 6.png" type="Texture" id=65]
+[ext_resource path="res://resources/textures/gifs/4/framez 4.png" type="Texture" id=66]
+[ext_resource path="res://resources/textures/gifs/4/framez 24.png" type="Texture" id=67]
+[ext_resource path="res://resources/textures/gifs/4/framez 7.png" type="Texture" id=68]
+[ext_resource path="res://resources/textures/gifs/4/framez 26.png" type="Texture" id=69]
+[ext_resource path="res://resources/textures/gifs/4/framez 35.png" type="Texture" id=70]
+[ext_resource path="res://resources/textures/gifs/4/framez 3.png" type="Texture" id=71]
+[ext_resource path="res://resources/textures/gifs/4/framez 14.png" type="Texture" id=72]
+[ext_resource path="res://resources/textures/gifs/4/framez 36.png" type="Texture" id=73]
+[ext_resource path="res://resources/textures/gifs/4/framez 77.png" type="Texture" id=74]
+[ext_resource path="res://resources/textures/gifs/4/framez 72.png" type="Texture" id=75]
+[ext_resource path="res://resources/textures/gifs/4/framez 67.png" type="Texture" id=76]
+[ext_resource path="res://resources/textures/gifs/4/framez 74.png" type="Texture" id=77]
+[ext_resource path="res://resources/textures/gifs/4/framez 78.png" type="Texture" id=78]
+[ext_resource path="res://resources/textures/gifs/4/framez 68.png" type="Texture" id=79]
+[ext_resource path="res://resources/textures/gifs/4/framez 75.png" type="Texture" id=80]
+[ext_resource path="res://resources/textures/gifs/4/framez 69.png" type="Texture" id=81]
+[ext_resource path="res://resources/textures/gifs/4/framez 70.png" type="Texture" id=82]
+[ext_resource path="res://resources/textures/gifs/4/framez 71.png" type="Texture" id=83]
+[ext_resource path="res://resources/textures/gifs/4/framez 66.png" type="Texture" id=84]
+[ext_resource path="res://resources/textures/gifs/4/framez 73.png" type="Texture" id=85]
+[ext_resource path="res://resources/textures/gifs/4/framez 76.png" type="Texture" id=86]
+[ext_resource path="res://resources/textures/gifs/4/framez 82.png" type="Texture" id=87]
+[ext_resource path="res://resources/textures/gifs/4/framez 79.png" type="Texture" id=88]
+[ext_resource path="res://resources/textures/gifs/4/framez 80.png" type="Texture" id=89]
+[ext_resource path="res://resources/textures/gifs/4/framez 81.png" type="Texture" id=90]
+[ext_resource path="res://resources/textures/gifs/4/framez 83.png" type="Texture" id=91]
+[ext_resource path="res://resources/textures/gifs/4/framez 84.png" type="Texture" id=92]
+[ext_resource path="res://resources/textures/gifs/4/framez 85.png" type="Texture" id=93]
+[ext_resource path="res://resources/textures/gifs/4/framez 86.png" type="Texture" id=94]
+[ext_resource path="res://resources/textures/gifs/4/framez 87.png" type="Texture" id=95]
+[ext_resource path="res://resources/textures/gifs/4/framez 89.png" type="Texture" id=96]
+[ext_resource path="res://resources/textures/gifs/4/framez 90.png" type="Texture" id=97]
+[ext_resource path="res://resources/textures/gifs/4/framez 88.png" type="Texture" id=98]
+[ext_resource path="res://resources/textures/gifs/4/framez 91.png" type="Texture" id=99]
+[ext_resource path="res://resources/textures/gifs/4/framez 92.png" type="Texture" id=100]
+[ext_resource path="res://resources/textures/gifs/4/framez 93.png" type="Texture" id=101]
+[ext_resource path="res://resources/textures/gifs/4/framez 129.png" type="Texture" id=102]
+[ext_resource path="res://resources/textures/gifs/4/framez 131.png" type="Texture" id=103]
+[ext_resource path="res://resources/textures/gifs/4/framez 132.png" type="Texture" id=104]
+[ext_resource path="res://resources/textures/gifs/4/framez 104.png" type="Texture" id=105]
+[ext_resource path="res://resources/textures/gifs/4/framez 106.png" type="Texture" id=106]
+[ext_resource path="res://resources/textures/gifs/4/framez 136.png" type="Texture" id=107]
+[ext_resource path="res://resources/textures/gifs/4/framez 137.png" type="Texture" id=108]
+[ext_resource path="res://resources/textures/gifs/4/framez 128.png" type="Texture" id=109]
+[ext_resource path="res://resources/textures/gifs/4/framez 102.png" type="Texture" id=110]
+[ext_resource path="res://resources/textures/gifs/4/framez 138.png" type="Texture" id=111]
+[ext_resource path="res://resources/textures/gifs/4/framez 142.png" type="Texture" id=112]
+[ext_resource path="res://resources/textures/gifs/4/framez 125.png" type="Texture" id=113]
+[ext_resource path="res://resources/textures/gifs/4/framez 144.png" type="Texture" id=114]
+[ext_resource path="res://resources/textures/gifs/4/framez 96.png" type="Texture" id=115]
+[ext_resource path="res://resources/textures/gifs/4/framez 146.png" type="Texture" id=116]
+[ext_resource path="res://resources/textures/gifs/4/framez 103.png" type="Texture" id=117]
+[ext_resource path="res://resources/textures/gifs/4/framez 110.png" type="Texture" id=118]
+[ext_resource path="res://resources/textures/gifs/4/framez 124.png" type="Texture" id=119]
+[ext_resource path="res://resources/textures/gifs/4/framez 100.png" type="Texture" id=120]
+[ext_resource path="res://resources/textures/gifs/4/framez 119.png" type="Texture" id=121]
+[ext_resource path="res://resources/textures/gifs/4/framez 101.png" type="Texture" id=122]
+[ext_resource path="res://resources/textures/gifs/4/framez 113.png" type="Texture" id=123]
+[ext_resource path="res://resources/textures/gifs/4/framez 112.png" type="Texture" id=124]
+[ext_resource path="res://resources/textures/gifs/4/framez 120.png" type="Texture" id=125]
+[ext_resource path="res://resources/textures/gifs/4/framez 130.png" type="Texture" id=126]
+[ext_resource path="res://resources/textures/gifs/4/framez 134.png" type="Texture" id=127]
+[ext_resource path="res://resources/textures/gifs/4/framez 143.png" type="Texture" id=128]
+[ext_resource path="res://resources/textures/gifs/4/framez 139.png" type="Texture" id=129]
+[ext_resource path="res://resources/textures/gifs/4/framez 147.png" type="Texture" id=130]
+[ext_resource path="res://resources/textures/gifs/4/framez 140.png" type="Texture" id=131]
+[ext_resource path="res://resources/textures/gifs/4/framez 148.png" type="Texture" id=132]
+[ext_resource path="res://resources/textures/gifs/4/framez 149.png" type="Texture" id=133]
+[ext_resource path="res://resources/textures/gifs/4/framez 150.png" type="Texture" id=134]
+[ext_resource path="res://resources/textures/gifs/4/framez 152.png" type="Texture" id=135]
+[ext_resource path="res://resources/textures/gifs/4/framez 153.png" type="Texture" id=136]
+[ext_resource path="res://resources/textures/gifs/4/framez 154.png" type="Texture" id=137]
+[ext_resource path="res://resources/textures/gifs/4/framez 151.png" type="Texture" id=138]
+[ext_resource path="res://resources/textures/gifs/4/framez 94.png" type="Texture" id=139]
+[ext_resource path="res://resources/textures/gifs/4/framez 155.png" type="Texture" id=140]
+[ext_resource path="res://resources/textures/gifs/4/framez 156.png" type="Texture" id=141]
+[ext_resource path="res://resources/textures/gifs/4/framez 118.png" type="Texture" id=142]
+[ext_resource path="res://resources/textures/gifs/4/framez 157.png" type="Texture" id=143]
+[ext_resource path="res://resources/textures/gifs/4/framez 141.png" type="Texture" id=144]
+[ext_resource path="res://resources/textures/gifs/4/framez 108.png" type="Texture" id=145]
+[ext_resource path="res://resources/textures/gifs/4/framez 97.png" type="Texture" id=146]
+[ext_resource path="res://resources/textures/gifs/4/framez 117.png" type="Texture" id=147]
+[ext_resource path="res://resources/textures/gifs/4/framez 122.png" type="Texture" id=148]
+[ext_resource path="res://resources/textures/gifs/4/framez 123.png" type="Texture" id=149]
+[ext_resource path="res://resources/textures/gifs/4/framez 145.png" type="Texture" id=150]
+[ext_resource path="res://resources/textures/gifs/4/framez 98.png" type="Texture" id=151]
+[ext_resource path="res://resources/textures/gifs/4/framez 133.png" type="Texture" id=152]
+[ext_resource path="res://resources/textures/gifs/4/framez 105.png" type="Texture" id=153]
+[ext_resource path="res://resources/textures/gifs/4/framez 107.png" type="Texture" id=154]
+[ext_resource path="res://resources/textures/gifs/4/framez 135.png" type="Texture" id=155]
+[ext_resource path="res://resources/textures/gifs/4/framez 109.png" type="Texture" id=156]
+[ext_resource path="res://resources/textures/gifs/4/framez 121.png" type="Texture" id=157]
+[ext_resource path="res://resources/textures/gifs/4/framez 115.png" type="Texture" id=158]
+[ext_resource path="res://resources/textures/gifs/4/framez 114.png" type="Texture" id=159]
+[ext_resource path="res://resources/textures/gifs/4/framez 99.png" type="Texture" id=160]
+[ext_resource path="res://resources/textures/gifs/4/framez 111.png" type="Texture" id=161]
+[ext_resource path="res://resources/textures/gifs/4/framez 95.png" type="Texture" id=162]
+[ext_resource path="res://resources/textures/gifs/4/framez 116.png" type="Texture" id=163]
+[ext_resource path="res://resources/textures/gifs/4/framez 126.png" type="Texture" id=164]
+[ext_resource path="res://resources/textures/gifs/4/framez 127.png" type="Texture" id=165]
+[ext_resource path="res://resources/textures/gifs/4/framez 161.png" type="Texture" id=166]
+[ext_resource path="res://resources/textures/gifs/4/framez 162.png" type="Texture" id=167]
+[ext_resource path="res://resources/textures/gifs/4/framez 163.png" type="Texture" id=168]
+[ext_resource path="res://resources/textures/gifs/4/framez 159.png" type="Texture" id=169]
+[ext_resource path="res://resources/textures/gifs/4/framez 158.png" type="Texture" id=170]
+[ext_resource path="res://resources/textures/gifs/4/framez 160.png" type="Texture" id=171]
+[ext_resource path="res://resources/textures/gifs/4/framez 172.png" type="Texture" id=172]
+[ext_resource path="res://resources/textures/gifs/4/framez 193.png" type="Texture" id=173]
+[ext_resource path="res://resources/textures/gifs/4/framez 200.png" type="Texture" id=174]
+[ext_resource path="res://resources/textures/gifs/4/framez 173.png" type="Texture" id=175]
+[ext_resource path="res://resources/textures/gifs/4/framez 196.png" type="Texture" id=176]
+[ext_resource path="res://resources/textures/gifs/4/framez 166.png" type="Texture" id=177]
+[ext_resource path="res://resources/textures/gifs/4/framez 167.png" type="Texture" id=178]
+[ext_resource path="res://resources/textures/gifs/4/framez 175.png" type="Texture" id=179]
+[ext_resource path="res://resources/textures/gifs/4/framez 164.png" type="Texture" id=180]
+[ext_resource path="res://resources/textures/gifs/4/framez 187.png" type="Texture" id=181]
+[ext_resource path="res://resources/textures/gifs/4/framez 177.png" type="Texture" id=182]
+[ext_resource path="res://resources/textures/gifs/4/framez 171.png" type="Texture" id=183]
+[ext_resource path="res://resources/textures/gifs/4/framez 174.png" type="Texture" id=184]
+[ext_resource path="res://resources/textures/gifs/4/framez 178.png" type="Texture" id=185]
+[ext_resource path="res://resources/textures/gifs/4/framez 183.png" type="Texture" id=186]
+[ext_resource path="res://resources/textures/gifs/4/framez 188.png" type="Texture" id=187]
+[ext_resource path="res://resources/textures/gifs/4/framez 191.png" type="Texture" id=188]
+[ext_resource path="res://resources/textures/gifs/4/framez 202.png" type="Texture" id=189]
+[ext_resource path="res://resources/textures/gifs/4/framez 192.png" type="Texture" id=190]
+[ext_resource path="res://resources/textures/gifs/4/framez 189.png" type="Texture" id=191]
+[ext_resource path="res://resources/textures/gifs/4/framez 203.png" type="Texture" id=192]
+[ext_resource path="res://resources/textures/gifs/4/framez 206.png" type="Texture" id=193]
+[ext_resource path="res://resources/textures/gifs/4/framez 185.png" type="Texture" id=194]
+[ext_resource path="res://resources/textures/gifs/4/framez 179.png" type="Texture" id=195]
+[ext_resource path="res://resources/textures/gifs/4/framez 201.png" type="Texture" id=196]
+[ext_resource path="res://resources/textures/gifs/4/framez 194.png" type="Texture" id=197]
+[ext_resource path="res://resources/textures/gifs/4/framez 176.png" type="Texture" id=198]
+[ext_resource path="res://resources/textures/gifs/4/framez 165.png" type="Texture" id=199]
+[ext_resource path="res://resources/textures/gifs/4/framez 182.png" type="Texture" id=200]
+[ext_resource path="res://resources/textures/gifs/4/framez 184.png" type="Texture" id=201]
+[ext_resource path="res://resources/textures/gifs/4/framez 195.png" type="Texture" id=202]
+[ext_resource path="res://resources/textures/gifs/4/framez 197.png" type="Texture" id=203]
+[ext_resource path="res://resources/textures/gifs/4/framez 199.png" type="Texture" id=204]
+[ext_resource path="res://resources/textures/gifs/4/framez 198.png" type="Texture" id=205]
+[ext_resource path="res://resources/textures/gifs/4/framez 169.png" type="Texture" id=206]
+[ext_resource path="res://resources/textures/gifs/4/framez 180.png" type="Texture" id=207]
+[ext_resource path="res://resources/textures/gifs/4/framez 181.png" type="Texture" id=208]
+[ext_resource path="res://resources/textures/gifs/4/framez 186.png" type="Texture" id=209]
+[ext_resource path="res://resources/textures/gifs/4/framez 170.png" type="Texture" id=210]
+[ext_resource path="res://resources/textures/gifs/4/framez 190.png" type="Texture" id=211]
+[ext_resource path="res://resources/textures/gifs/4/framez 204.png" type="Texture" id=212]
+[ext_resource path="res://resources/textures/gifs/4/framez 205.png" type="Texture" id=213]
+[ext_resource path="res://resources/textures/gifs/4/framez 168.png" type="Texture" id=214]
+[ext_resource path="res://resources/textures/gifs/4/framez 207.png" type="Texture" id=215]
+[ext_resource path="res://resources/textures/gifs/4/framez 208.png" type="Texture" id=216]
+[ext_resource path="res://resources/textures/gifs/5/framez 1.png" type="Texture" id=217]
+[ext_resource path="res://resources/textures/gifs/5/framez 9.png" type="Texture" id=218]
+[ext_resource path="res://resources/textures/gifs/5/framez 11.png" type="Texture" id=219]
+[ext_resource path="res://resources/textures/gifs/5/framez 10.png" type="Texture" id=220]
+[ext_resource path="res://resources/textures/gifs/5/framez 12.png" type="Texture" id=221]
+[ext_resource path="res://resources/textures/gifs/5/framez 7.png" type="Texture" id=222]
+[ext_resource path="res://resources/textures/gifs/5/framez 16.png" type="Texture" id=223]
+[ext_resource path="res://resources/textures/gifs/5/framez 4.png" type="Texture" id=224]
+[ext_resource path="res://resources/textures/gifs/5/framez 5.png" type="Texture" id=225]
+[ext_resource path="res://resources/textures/gifs/5/framez 6.png" type="Texture" id=226]
+[ext_resource path="res://resources/textures/gifs/5/framez 8.png" type="Texture" id=227]
+[ext_resource path="res://resources/textures/gifs/5/framez 14.png" type="Texture" id=228]
+[ext_resource path="res://resources/textures/gifs/5/framez 13.png" type="Texture" id=229]
+[ext_resource path="res://resources/textures/gifs/5/framez 17.png" type="Texture" id=230]
+[ext_resource path="res://resources/textures/gifs/5/framez 18.png" type="Texture" id=231]
+[ext_resource path="res://resources/textures/gifs/5/framez 3.png" type="Texture" id=232]
+[ext_resource path="res://resources/textures/gifs/5/framez 2.png" type="Texture" id=233]
+[ext_resource path="res://resources/textures/gifs/5/framez 15.png" type="Texture" id=234]
+[ext_resource path="res://resources/textures/gifs/5/framez 0.png" type="Texture" id=235]
+[ext_resource path="res://resources/textures/gifs/5/framez 51.png" type="Texture" id=236]
+[ext_resource path="res://resources/textures/gifs/5/framez 54.png" type="Texture" id=237]
+[ext_resource path="res://resources/textures/gifs/5/framez 58.png" type="Texture" id=238]
+[ext_resource path="res://resources/textures/gifs/5/framez 70.png" type="Texture" id=239]
+[ext_resource path="res://resources/textures/gifs/5/framez 77.png" type="Texture" id=240]
+[ext_resource path="res://resources/textures/gifs/5/framez 25.png" type="Texture" id=241]
+[ext_resource path="res://resources/textures/gifs/5/framez 69.png" type="Texture" id=242]
+[ext_resource path="res://resources/textures/gifs/5/framez 79.png" type="Texture" id=243]
+[ext_resource path="res://resources/textures/gifs/5/framez 29.png" type="Texture" id=244]
+[ext_resource path="res://resources/textures/gifs/5/framez 81.png" type="Texture" id=245]
+[ext_resource path="res://resources/textures/gifs/5/framez 20.png" type="Texture" id=246]
+[ext_resource path="res://resources/textures/gifs/5/framez 50.png" type="Texture" id=247]
+[ext_resource path="res://resources/textures/gifs/5/framez 62.png" type="Texture" id=248]
+[ext_resource path="res://resources/textures/gifs/5/framez 44.png" type="Texture" id=249]
+[ext_resource path="res://resources/textures/gifs/5/framez 48.png" type="Texture" id=250]
+[ext_resource path="res://resources/textures/gifs/5/framez 65.png" type="Texture" id=251]
+[ext_resource path="res://resources/textures/gifs/5/framez 67.png" type="Texture" id=252]
+[ext_resource path="res://resources/textures/gifs/5/framez 39.png" type="Texture" id=253]
+[ext_resource path="res://resources/textures/gifs/5/framez 61.png" type="Texture" id=254]
+[ext_resource path="res://resources/textures/gifs/5/framez 72.png" type="Texture" id=255]
+[ext_resource path="res://resources/textures/gifs/5/framez 22.png" type="Texture" id=256]
+[ext_resource path="res://resources/textures/gifs/5/framez 26.png" type="Texture" id=257]
+[ext_resource path="res://resources/textures/gifs/5/framez 30.png" type="Texture" id=258]
+[ext_resource path="res://resources/textures/gifs/5/framez 74.png" type="Texture" id=259]
+[ext_resource path="res://resources/textures/gifs/5/framez 75.png" type="Texture" id=260]
+[ext_resource path="res://resources/textures/gifs/5/framez 82.png" type="Texture" id=261]
+[ext_resource path="res://resources/textures/gifs/5/framez 33.png" type="Texture" id=262]
+[ext_resource path="res://resources/textures/gifs/5/framez 76.png" type="Texture" id=263]
+[ext_resource path="res://resources/textures/gifs/5/framez 38.png" type="Texture" id=264]
+[ext_resource path="res://resources/textures/gifs/5/framez 80.png" type="Texture" id=265]
+[ext_resource path="res://resources/textures/gifs/5/framez 59.png" type="Texture" id=266]
+[ext_resource path="res://resources/textures/gifs/5/framez 34.png" type="Texture" id=267]
+[ext_resource path="res://resources/textures/gifs/5/framez 21.png" type="Texture" id=268]
+[ext_resource path="res://resources/textures/gifs/5/framez 36.png" type="Texture" id=269]
+[ext_resource path="res://resources/textures/gifs/5/framez 53.png" type="Texture" id=270]
+[ext_resource path="res://resources/textures/gifs/5/framez 35.png" type="Texture" id=271]
+[ext_resource path="res://resources/textures/gifs/5/framez 40.png" type="Texture" id=272]
+[ext_resource path="res://resources/textures/gifs/5/framez 41.png" type="Texture" id=273]
+[ext_resource path="res://resources/textures/gifs/5/framez 37.png" type="Texture" id=274]
+[ext_resource path="res://resources/textures/gifs/5/framez 57.png" type="Texture" id=275]
+[ext_resource path="res://resources/textures/gifs/5/framez 64.png" type="Texture" id=276]
+[ext_resource path="res://resources/textures/gifs/5/framez 68.png" type="Texture" id=277]
+[ext_resource path="res://resources/textures/gifs/5/framez 78.png" type="Texture" id=278]
+[ext_resource path="res://resources/textures/gifs/5/framez 45.png" type="Texture" id=279]
+[ext_resource path="res://resources/textures/gifs/5/framez 55.png" type="Texture" id=280]
+[ext_resource path="res://resources/textures/gifs/5/framez 52.png" type="Texture" id=281]
+[ext_resource path="res://resources/textures/gifs/5/framez 56.png" type="Texture" id=282]
+[ext_resource path="res://resources/textures/gifs/5/framez 46.png" type="Texture" id=283]
+[ext_resource path="res://resources/textures/gifs/5/framez 49.png" type="Texture" id=284]
+[ext_resource path="res://resources/textures/gifs/5/framez 28.png" type="Texture" id=285]
+[ext_resource path="res://resources/textures/gifs/5/framez 71.png" type="Texture" id=286]
+[ext_resource path="res://resources/textures/gifs/5/framez 27.png" type="Texture" id=287]
+[ext_resource path="res://resources/textures/gifs/5/framez 60.png" type="Texture" id=288]
+[ext_resource path="res://resources/textures/gifs/5/framez 31.png" type="Texture" id=289]
+[ext_resource path="res://resources/textures/gifs/5/framez 63.png" type="Texture" id=290]
+[ext_resource path="res://resources/textures/gifs/5/framez 23.png" type="Texture" id=291]
+[ext_resource path="res://resources/textures/gifs/5/framez 42.png" type="Texture" id=292]
+[ext_resource path="res://resources/textures/gifs/5/framez 73.png" type="Texture" id=293]
+[ext_resource path="res://resources/textures/gifs/5/framez 24.png" type="Texture" id=294]
+[ext_resource path="res://resources/textures/gifs/5/framez 19.png" type="Texture" id=295]
+[ext_resource path="res://resources/textures/gifs/5/framez 43.png" type="Texture" id=296]
+[ext_resource path="res://resources/textures/gifs/5/framez 47.png" type="Texture" id=297]
+[ext_resource path="res://resources/textures/gifs/5/framez 32.png" type="Texture" id=298]
+[ext_resource path="res://resources/textures/gifs/5/framez 66.png" type="Texture" id=299]
+[ext_resource path="res://resources/textures/gifs/5/framez 95.png" type="Texture" id=300]
+[ext_resource path="res://resources/textures/gifs/5/framez 83.png" type="Texture" id=301]
+[ext_resource path="res://resources/textures/gifs/5/framez 91.png" type="Texture" id=302]
+[ext_resource path="res://resources/textures/gifs/5/framez 85.png" type="Texture" id=303]
+[ext_resource path="res://resources/textures/gifs/5/framez 87.png" type="Texture" id=304]
+[ext_resource path="res://resources/textures/gifs/5/framez 84.png" type="Texture" id=305]
+[ext_resource path="res://resources/textures/gifs/5/framez 86.png" type="Texture" id=306]
+[ext_resource path="res://resources/textures/gifs/5/framez 88.png" type="Texture" id=307]
+[ext_resource path="res://resources/textures/gifs/5/framez 90.png" type="Texture" id=308]
+[ext_resource path="res://resources/textures/gifs/5/framez 89.png" type="Texture" id=309]
+[ext_resource path="res://resources/textures/gifs/5/framez 93.png" type="Texture" id=310]
+[ext_resource path="res://resources/textures/gifs/5/framez 94.png" type="Texture" id=311]
+[ext_resource path="res://resources/textures/gifs/5/framez 92.png" type="Texture" id=312]
+[ext_resource path="res://resources/textures/gifs/5/framez 196.png" type="Texture" id=313]
+[ext_resource path="res://resources/textures/gifs/5/framez 182.png" type="Texture" id=314]
+[ext_resource path="res://resources/textures/gifs/6/framez 1.png" type="Texture" id=315]
+[ext_resource path="res://resources/textures/gifs/6/framez 9.png" type="Texture" id=316]
+[ext_resource path="res://resources/textures/gifs/5/framez 181.png" type="Texture" id=317]
+[ext_resource path="res://resources/textures/gifs/6/framez 10.png" type="Texture" id=318]
+[ext_resource path="res://resources/textures/gifs/6/framez 19.png" type="Texture" id=319]
+[ext_resource path="res://resources/textures/gifs/6/framez 22.png" type="Texture" id=320]
+[ext_resource path="res://resources/textures/gifs/5/framez 189.png" type="Texture" id=321]
+[ext_resource path="res://resources/textures/gifs/5/framez 195.png" type="Texture" id=322]
+[ext_resource path="res://resources/textures/gifs/6/framez 5.png" type="Texture" id=323]
+[ext_resource path="res://resources/textures/gifs/6/framez 11.png" type="Texture" id=324]
+[ext_resource path="res://resources/textures/gifs/6/framez 24.png" type="Texture" id=325]
+[ext_resource path="res://resources/textures/gifs/6/framez 6.png" type="Texture" id=326]
+[ext_resource path="res://resources/textures/gifs/5/framez 206.png" type="Texture" id=327]
+[ext_resource path="res://resources/textures/gifs/5/framez 197.png" type="Texture" id=328]
+[ext_resource path="res://resources/textures/gifs/6/framez 12.png" type="Texture" id=329]
+[ext_resource path="res://resources/textures/gifs/5/framez 198.png" type="Texture" id=330]
+[ext_resource path="res://resources/textures/gifs/5/framez 175.png" type="Texture" id=331]
+[ext_resource path="res://resources/textures/gifs/5/framez 180.png" type="Texture" id=332]
+[ext_resource path="res://resources/textures/gifs/5/framez 200.png" type="Texture" id=333]
+[ext_resource path="res://resources/textures/gifs/6/framez 3.png" type="Texture" id=334]
+[ext_resource path="res://resources/textures/gifs/5/framez 186.png" type="Texture" id=335]
+[ext_resource path="res://resources/textures/gifs/5/framez 190.png" type="Texture" id=336]
+[ext_resource path="res://resources/textures/gifs/6/framez 8.png" type="Texture" id=337]
+[ext_resource path="res://resources/textures/gifs/5/framez 193.png" type="Texture" id=338]
+[ext_resource path="res://resources/textures/gifs/5/framez 204.png" type="Texture" id=339]
+[ext_resource path="res://resources/textures/gifs/6/framez 4.png" type="Texture" id=340]
+[ext_resource path="res://resources/textures/gifs/5/framez 194.png" type="Texture" id=341]
+[ext_resource path="res://resources/textures/gifs/5/framez 173.png" type="Texture" id=342]
+[ext_resource path="res://resources/textures/gifs/5/framez 177.png" type="Texture" id=343]
+[ext_resource path="res://resources/textures/gifs/5/framez 185.png" type="Texture" id=344]
+[ext_resource path="res://resources/textures/gifs/5/framez 191.png" type="Texture" id=345]
+[ext_resource path="res://resources/textures/gifs/6/framez 13.png" type="Texture" id=346]
+[ext_resource path="res://resources/textures/gifs/6/framez 14.png" type="Texture" id=347]
+[ext_resource path="res://resources/textures/gifs/5/framez 178.png" type="Texture" id=348]
+[ext_resource path="res://resources/textures/gifs/6/framez 0.png" type="Texture" id=349]
+[ext_resource path="res://resources/textures/gifs/6/framez 16.png" type="Texture" id=350]
+[ext_resource path="res://resources/textures/gifs/5/framez 207.png" type="Texture" id=351]
+[ext_resource path="res://resources/textures/gifs/5/framez 183.png" type="Texture" id=352]
+[ext_resource path="res://resources/textures/gifs/5/framez 199.png" type="Texture" id=353]
+[ext_resource path="res://resources/textures/gifs/5/framez 205.png" type="Texture" id=354]
+[ext_resource path="res://resources/textures/gifs/6/framez 15.png" type="Texture" id=355]
+[ext_resource path="res://resources/textures/gifs/5/framez 203.png" type="Texture" id=356]
+[ext_resource path="res://resources/textures/gifs/6/framez 17.png" type="Texture" id=357]
+[ext_resource path="res://resources/textures/gifs/6/framez 18.png" type="Texture" id=358]
+[ext_resource path="res://resources/textures/gifs/6/framez 20.png" type="Texture" id=359]
+[ext_resource path="res://resources/textures/gifs/6/framez 21.png" type="Texture" id=360]
+[ext_resource path="res://resources/textures/gifs/6/framez 25.png" type="Texture" id=361]
+[ext_resource path="res://resources/textures/gifs/5/framez 202.png" type="Texture" id=362]
+[ext_resource path="res://resources/textures/gifs/5/framez 201.png" type="Texture" id=363]
+[ext_resource path="res://resources/textures/gifs/5/framez 184.png" type="Texture" id=364]
+[ext_resource path="res://resources/textures/gifs/5/framez 208.png" type="Texture" id=365]
+[ext_resource path="res://resources/textures/gifs/6/framez 23.png" type="Texture" id=366]
+[ext_resource path="res://resources/textures/gifs/6/framez 26.png" type="Texture" id=367]
+[ext_resource path="res://resources/textures/gifs/6/framez 27.png" type="Texture" id=368]
+[ext_resource path="res://resources/textures/gifs/5/framez 188.png" type="Texture" id=369]
+[ext_resource path="res://resources/textures/gifs/5/framez 174.png" type="Texture" id=370]
+[ext_resource path="res://resources/textures/gifs/5/framez 176.png" type="Texture" id=371]
+[ext_resource path="res://resources/textures/gifs/5/framez 192.png" type="Texture" id=372]
+[ext_resource path="res://resources/textures/gifs/6/framez 2.png" type="Texture" id=373]
+[ext_resource path="res://resources/textures/gifs/5/framez 179.png" type="Texture" id=374]
+[ext_resource path="res://resources/textures/gifs/5/framez 187.png" type="Texture" id=375]
+[ext_resource path="res://resources/textures/gifs/6/framez 7.png" type="Texture" id=376]
+[ext_resource path="res://resources/textures/gifs/5/framez 116.png" type="Texture" id=377]
+[ext_resource path="res://resources/textures/gifs/5/framez 142.png" type="Texture" id=378]
+[ext_resource path="res://resources/textures/gifs/5/framez 149.png" type="Texture" id=379]
+[ext_resource path="res://resources/textures/gifs/5/framez 101.png" type="Texture" id=380]
+[ext_resource path="res://resources/textures/gifs/5/framez 124.png" type="Texture" id=381]
+[ext_resource path="res://resources/textures/gifs/5/framez 150.png" type="Texture" id=382]
+[ext_resource path="res://resources/textures/gifs/5/framez 153.png" type="Texture" id=383]
+[ext_resource path="res://resources/textures/gifs/5/framez 154.png" type="Texture" id=384]
+[ext_resource path="res://resources/textures/gifs/5/framez 104.png" type="Texture" id=385]
+[ext_resource path="res://resources/textures/gifs/5/framez 155.png" type="Texture" id=386]
+[ext_resource path="res://resources/textures/gifs/5/framez 112.png" type="Texture" id=387]
+[ext_resource path="res://resources/textures/gifs/5/framez 105.png" type="Texture" id=388]
+[ext_resource path="res://resources/textures/gifs/5/framez 126.png" type="Texture" id=389]
+[ext_resource path="res://resources/textures/gifs/5/framez 137.png" type="Texture" id=390]
+[ext_resource path="res://resources/textures/gifs/5/framez 144.png" type="Texture" id=391]
+[ext_resource path="res://resources/textures/gifs/5/framez 151.png" type="Texture" id=392]
+[ext_resource path="res://resources/textures/gifs/5/framez 156.png" type="Texture" id=393]
+[ext_resource path="res://resources/textures/gifs/5/framez 158.png" type="Texture" id=394]
+[ext_resource path="res://resources/textures/gifs/5/framez 147.png" type="Texture" id=395]
+[ext_resource path="res://resources/textures/gifs/5/framez 122.png" type="Texture" id=396]
+[ext_resource path="res://resources/textures/gifs/5/framez 132.png" type="Texture" id=397]
+[ext_resource path="res://resources/textures/gifs/5/framez 152.png" type="Texture" id=398]
+[ext_resource path="res://resources/textures/gifs/5/framez 117.png" type="Texture" id=399]
+[ext_resource path="res://resources/textures/gifs/5/framez 127.png" type="Texture" id=400]
+[ext_resource path="res://resources/textures/gifs/5/framez 157.png" type="Texture" id=401]
+[ext_resource path="res://resources/textures/gifs/5/framez 102.png" type="Texture" id=402]
+[ext_resource path="res://resources/textures/gifs/5/framez 131.png" type="Texture" id=403]
+[ext_resource path="res://resources/textures/gifs/5/framez 159.png" type="Texture" id=404]
+[ext_resource path="res://resources/textures/gifs/5/framez 123.png" type="Texture" id=405]
+[ext_resource path="res://resources/textures/gifs/5/framez 120.png" type="Texture" id=406]
+[ext_resource path="res://resources/textures/gifs/5/framez 103.png" type="Texture" id=407]
+[ext_resource path="res://resources/textures/gifs/5/framez 111.png" type="Texture" id=408]
+[ext_resource path="res://resources/textures/gifs/5/framez 106.png" type="Texture" id=409]
+[ext_resource path="res://resources/textures/gifs/5/framez 115.png" type="Texture" id=410]
+[ext_resource path="res://resources/textures/gifs/5/framez 119.png" type="Texture" id=411]
+[ext_resource path="res://resources/textures/gifs/5/framez 109.png" type="Texture" id=412]
+[ext_resource path="res://resources/textures/gifs/5/framez 129.png" type="Texture" id=413]
+[ext_resource path="res://resources/textures/gifs/5/framez 140.png" type="Texture" id=414]
+[ext_resource path="res://resources/textures/gifs/5/framez 141.png" type="Texture" id=415]
+[ext_resource path="res://resources/textures/gifs/5/framez 125.png" type="Texture" id=416]
+[ext_resource path="res://resources/textures/gifs/5/framez 110.png" type="Texture" id=417]
+[ext_resource path="res://resources/textures/gifs/5/framez 130.png" type="Texture" id=418]
+[ext_resource path="res://resources/textures/gifs/5/framez 138.png" type="Texture" id=419]
+[ext_resource path="res://resources/textures/gifs/5/framez 113.png" type="Texture" id=420]
+[ext_resource path="res://resources/textures/gifs/5/framez 108.png" type="Texture" id=421]
+[ext_resource path="res://resources/textures/gifs/5/framez 139.png" type="Texture" id=422]
+[ext_resource path="res://resources/textures/gifs/5/framez 143.png" type="Texture" id=423]
+[ext_resource path="res://resources/textures/gifs/5/framez 145.png" type="Texture" id=424]
+[ext_resource path="res://resources/textures/gifs/5/framez 146.png" type="Texture" id=425]
+[ext_resource path="res://resources/textures/gifs/5/framez 99.png" type="Texture" id=426]
+[ext_resource path="res://resources/textures/gifs/5/framez 136.png" type="Texture" id=427]
+[ext_resource path="res://resources/textures/gifs/5/framez 96.png" type="Texture" id=428]
+[ext_resource path="res://resources/textures/gifs/5/framez 100.png" type="Texture" id=429]
+[ext_resource path="res://resources/textures/gifs/5/framez 97.png" type="Texture" id=430]
+[ext_resource path="res://resources/textures/gifs/5/framez 118.png" type="Texture" id=431]
+[ext_resource path="res://resources/textures/gifs/5/framez 128.png" type="Texture" id=432]
+[ext_resource path="res://resources/textures/gifs/5/framez 134.png" type="Texture" id=433]
+[ext_resource path="res://resources/textures/gifs/5/framez 133.png" type="Texture" id=434]
+[ext_resource path="res://resources/textures/gifs/5/framez 98.png" type="Texture" id=435]
+[ext_resource path="res://resources/textures/gifs/5/framez 114.png" type="Texture" id=436]
+[ext_resource path="res://resources/textures/gifs/5/framez 121.png" type="Texture" id=437]
+[ext_resource path="res://resources/textures/gifs/5/framez 107.png" type="Texture" id=438]
+[ext_resource path="res://resources/textures/gifs/5/framez 135.png" type="Texture" id=439]
+[ext_resource path="res://resources/textures/gifs/5/framez 148.png" type="Texture" id=440]
+[ext_resource path="res://resources/textures/gifs/5/framez 165.png" type="Texture" id=441]
+[ext_resource path="res://resources/textures/gifs/5/framez 167.png" type="Texture" id=442]
+[ext_resource path="res://resources/textures/gifs/5/framez 168.png" type="Texture" id=443]
+[ext_resource path="res://resources/textures/gifs/5/framez 160.png" type="Texture" id=444]
+[ext_resource path="res://resources/textures/gifs/5/framez 161.png" type="Texture" id=445]
+[ext_resource path="res://resources/textures/gifs/5/framez 163.png" type="Texture" id=446]
+[ext_resource path="res://resources/textures/gifs/5/framez 166.png" type="Texture" id=447]
+[ext_resource path="res://resources/textures/gifs/5/framez 171.png" type="Texture" id=448]
+[ext_resource path="res://resources/textures/gifs/5/framez 170.png" type="Texture" id=449]
+[ext_resource path="res://resources/textures/gifs/5/framez 169.png" type="Texture" id=450]
+[ext_resource path="res://resources/textures/gifs/5/framez 172.png" type="Texture" id=451]
+[ext_resource path="res://resources/textures/gifs/5/framez 162.png" type="Texture" id=452]
+[ext_resource path="res://resources/textures/gifs/5/framez 164.png" type="Texture" id=453]
+[ext_resource path="res://resources/textures/gifs/7/framez 95.png" type="Texture" id=454]
+[ext_resource path="res://resources/textures/gifs/7/framez 96.png" type="Texture" id=455]
+[ext_resource path="res://resources/textures/gifs/7/framez 61.png" type="Texture" id=456]
+[ext_resource path="res://resources/textures/gifs/7/framez 69.png" type="Texture" id=457]
+[ext_resource path="res://resources/textures/gifs/7/framez 43.png" type="Texture" id=458]
+[ext_resource path="res://resources/textures/gifs/7/framez 76.png" type="Texture" id=459]
+[ext_resource path="res://resources/textures/gifs/7/framez 86.png" type="Texture" id=460]
+[ext_resource path="res://resources/textures/gifs/7/framez 90.png" type="Texture" id=461]
+[ext_resource path="res://resources/textures/gifs/7/framez 59.png" type="Texture" id=462]
+[ext_resource path="res://resources/textures/gifs/7/framez 71.png" type="Texture" id=463]
+[ext_resource path="res://resources/textures/gifs/7/framez 78.png" type="Texture" id=464]
+[ext_resource path="res://resources/textures/gifs/7/framez 54.png" type="Texture" id=465]
+[ext_resource path="res://resources/textures/gifs/7/framez 75.png" type="Texture" id=466]
+[ext_resource path="res://resources/textures/gifs/7/framez 77.png" type="Texture" id=467]
+[ext_resource path="res://resources/textures/gifs/7/framez 79.png" type="Texture" id=468]
+[ext_resource path="res://resources/textures/gifs/7/framez 85.png" type="Texture" id=469]
+[ext_resource path="res://resources/textures/gifs/7/framez 36.png" type="Texture" id=470]
+[ext_resource path="res://resources/textures/gifs/7/framez 58.png" type="Texture" id=471]
+[ext_resource path="res://resources/textures/gifs/7/framez 41.png" type="Texture" id=472]
+[ext_resource path="res://resources/textures/gifs/7/framez 49.png" type="Texture" id=473]
+[ext_resource path="res://resources/textures/gifs/7/framez 53.png" type="Texture" id=474]
+[ext_resource path="res://resources/textures/gifs/7/framez 63.png" type="Texture" id=475]
+[ext_resource path="res://resources/textures/gifs/7/framez 66.png" type="Texture" id=476]
+[ext_resource path="res://resources/textures/gifs/7/framez 57.png" type="Texture" id=477]
+[ext_resource path="res://resources/textures/gifs/7/framez 73.png" type="Texture" id=478]
+[ext_resource path="res://resources/textures/gifs/7/framez 88.png" type="Texture" id=479]
+[ext_resource path="res://resources/textures/gifs/7/framez 46.png" type="Texture" id=480]
+[ext_resource path="res://resources/textures/gifs/7/framez 65.png" type="Texture" id=481]
+[ext_resource path="res://resources/textures/gifs/7/framez 89.png" type="Texture" id=482]
+[ext_resource path="res://resources/textures/gifs/7/framez 92.png" type="Texture" id=483]
+[ext_resource path="res://resources/textures/gifs/7/framez 93.png" type="Texture" id=484]
+[ext_resource path="res://resources/textures/gifs/7/framez 97.png" type="Texture" id=485]
+[ext_resource path="res://resources/textures/gifs/7/framez 98.png" type="Texture" id=486]
+[ext_resource path="res://resources/textures/gifs/7/framez 47.png" type="Texture" id=487]
+[ext_resource path="res://resources/textures/gifs/7/framez 91.png" type="Texture" id=488]
+[ext_resource path="res://resources/textures/gifs/7/framez 99.png" type="Texture" id=489]
+[ext_resource path="res://resources/textures/gifs/7/framez 48.png" type="Texture" id=490]
+[ext_resource path="res://resources/textures/gifs/7/framez 62.png" type="Texture" id=491]
+[ext_resource path="res://resources/textures/gifs/7/framez 37.png" type="Texture" id=492]
+[ext_resource path="res://resources/textures/gifs/7/framez 38.png" type="Texture" id=493]
+[ext_resource path="res://resources/textures/gifs/7/framez 64.png" type="Texture" id=494]
+[ext_resource path="res://resources/textures/gifs/7/framez 80.png" type="Texture" id=495]
+[ext_resource path="res://resources/textures/gifs/7/framez 39.png" type="Texture" id=496]
+[ext_resource path="res://resources/textures/gifs/7/framez 52.png" type="Texture" id=497]
+[ext_resource path="res://resources/textures/gifs/7/framez 42.png" type="Texture" id=498]
+[ext_resource path="res://resources/textures/gifs/7/framez 44.png" type="Texture" id=499]
+[ext_resource path="res://resources/textures/gifs/7/framez 45.png" type="Texture" id=500]
+[ext_resource path="res://resources/textures/gifs/7/framez 50.png" type="Texture" id=501]
+[ext_resource path="res://resources/textures/gifs/7/framez 56.png" type="Texture" id=502]
+[ext_resource path="res://resources/textures/gifs/7/framez 70.png" type="Texture" id=503]
+[ext_resource path="res://resources/textures/gifs/7/framez 67.png" type="Texture" id=504]
+[ext_resource path="res://resources/textures/gifs/7/framez 60.png" type="Texture" id=505]
+[ext_resource path="res://resources/textures/gifs/7/framez 68.png" type="Texture" id=506]
+[ext_resource path="res://resources/textures/gifs/7/framez 72.png" type="Texture" id=507]
+[ext_resource path="res://resources/textures/gifs/7/framez 55.png" type="Texture" id=508]
+[ext_resource path="res://resources/textures/gifs/7/framez 81.png" type="Texture" id=509]
+[ext_resource path="res://resources/textures/gifs/7/framez 74.png" type="Texture" id=510]
+[ext_resource path="res://resources/textures/gifs/7/framez 83.png" type="Texture" id=511]
+[ext_resource path="res://resources/textures/gifs/7/framez 40.png" type="Texture" id=512]
+[ext_resource path="res://resources/textures/gifs/7/framez 51.png" type="Texture" id=513]
+[ext_resource path="res://resources/textures/gifs/7/framez 82.png" type="Texture" id=514]
+[ext_resource path="res://resources/textures/gifs/7/framez 84.png" type="Texture" id=515]
+[ext_resource path="res://resources/textures/gifs/7/framez 87.png" type="Texture" id=516]
+[ext_resource path="res://resources/textures/gifs/7/framez 94.png" type="Texture" id=517]
+[ext_resource path="res://resources/textures/gifs/6/framez 29.png" type="Texture" id=518]
+[ext_resource path="res://resources/textures/gifs/6/framez 53.png" type="Texture" id=519]
+[ext_resource path="res://resources/textures/gifs/6/framez 61.png" type="Texture" id=520]
+[ext_resource path="res://resources/textures/gifs/6/framez 67.png" type="Texture" id=521]
+[ext_resource path="res://resources/textures/gifs/6/framez 81.png" type="Texture" id=522]
+[ext_resource path="res://resources/textures/gifs/6/framez 37.png" type="Texture" id=523]
+[ext_resource path="res://resources/textures/gifs/6/framez 38.png" type="Texture" id=524]
+[ext_resource path="res://resources/textures/gifs/6/framez 55.png" type="Texture" id=525]
+[ext_resource path="res://resources/textures/gifs/6/framez 60.png" type="Texture" id=526]
+[ext_resource path="res://resources/textures/gifs/6/framez 31.png" type="Texture" id=527]
+[ext_resource path="res://resources/textures/gifs/6/framez 41.png" type="Texture" id=528]
+[ext_resource path="res://resources/textures/gifs/6/framez 47.png" type="Texture" id=529]
+[ext_resource path="res://resources/textures/gifs/6/framez 54.png" type="Texture" id=530]
+[ext_resource path="res://resources/textures/gifs/6/framez 56.png" type="Texture" id=531]
+[ext_resource path="res://resources/textures/gifs/6/framez 66.png" type="Texture" id=532]
+[ext_resource path="res://resources/textures/gifs/6/framez 49.png" type="Texture" id=533]
+[ext_resource path="res://resources/textures/gifs/6/framez 45.png" type="Texture" id=534]
+[ext_resource path="res://resources/textures/gifs/6/framez 65.png" type="Texture" id=535]
+[ext_resource path="res://resources/textures/gifs/6/framez 70.png" type="Texture" id=536]
+[ext_resource path="res://resources/textures/gifs/6/framez 79.png" type="Texture" id=537]
+[ext_resource path="res://resources/textures/gifs/6/framez 85.png" type="Texture" id=538]
+[ext_resource path="res://resources/textures/gifs/6/framez 86.png" type="Texture" id=539]
+[ext_resource path="res://resources/textures/gifs/6/framez 90.png" type="Texture" id=540]
+[ext_resource path="res://resources/textures/gifs/6/framez 91.png" type="Texture" id=541]
+[ext_resource path="res://resources/textures/gifs/6/framez 40.png" type="Texture" id=542]
+[ext_resource path="res://resources/textures/gifs/6/framez 64.png" type="Texture" id=543]
+[ext_resource path="res://resources/textures/gifs/6/framez 32.png" type="Texture" id=544]
+[ext_resource path="res://resources/textures/gifs/6/framez 84.png" type="Texture" id=545]
+[ext_resource path="res://resources/textures/gifs/6/framez 44.png" type="Texture" id=546]
+[ext_resource path="res://resources/textures/gifs/6/framez 28.png" type="Texture" id=547]
+[ext_resource path="res://resources/textures/gifs/6/framez 50.png" type="Texture" id=548]
+[ext_resource path="res://resources/textures/gifs/6/framez 62.png" type="Texture" id=549]
+[ext_resource path="res://resources/textures/gifs/6/framez 68.png" type="Texture" id=550]
+[ext_resource path="res://resources/textures/gifs/6/framez 43.png" type="Texture" id=551]
+[ext_resource path="res://resources/textures/gifs/6/framez 46.png" type="Texture" id=552]
+[ext_resource path="res://resources/textures/gifs/6/framez 48.png" type="Texture" id=553]
+[ext_resource path="res://resources/textures/gifs/6/framez 71.png" type="Texture" id=554]
+[ext_resource path="res://resources/textures/gifs/6/framez 73.png" type="Texture" id=555]
+[ext_resource path="res://resources/textures/gifs/6/framez 76.png" type="Texture" id=556]
+[ext_resource path="res://resources/textures/gifs/6/framez 57.png" type="Texture" id=557]
+[ext_resource path="res://resources/textures/gifs/6/framez 78.png" type="Texture" id=558]
+[ext_resource path="res://resources/textures/gifs/6/framez 77.png" type="Texture" id=559]
+[ext_resource path="res://resources/textures/gifs/6/framez 52.png" type="Texture" id=560]
+[ext_resource path="res://resources/textures/gifs/6/framez 42.png" type="Texture" id=561]
+[ext_resource path="res://resources/textures/gifs/6/framez 36.png" type="Texture" id=562]
+[ext_resource path="res://resources/textures/gifs/6/framez 51.png" type="Texture" id=563]
+[ext_resource path="res://resources/textures/gifs/6/framez 59.png" type="Texture" id=564]
+[ext_resource path="res://resources/textures/gifs/6/framez 63.png" type="Texture" id=565]
+[ext_resource path="res://resources/textures/gifs/6/framez 72.png" type="Texture" id=566]
+[ext_resource path="res://resources/textures/gifs/6/framez 34.png" type="Texture" id=567]
+[ext_resource path="res://resources/textures/gifs/6/framez 75.png" type="Texture" id=568]
+[ext_resource path="res://resources/textures/gifs/6/framez 30.png" type="Texture" id=569]
+[ext_resource path="res://resources/textures/gifs/6/framez 80.png" type="Texture" id=570]
+[ext_resource path="res://resources/textures/gifs/6/framez 83.png" type="Texture" id=571]
+[ext_resource path="res://resources/textures/gifs/6/framez 33.png" type="Texture" id=572]
+[ext_resource path="res://resources/textures/gifs/6/framez 82.png" type="Texture" id=573]
+[ext_resource path="res://resources/textures/gifs/6/framez 87.png" type="Texture" id=574]
+[ext_resource path="res://resources/textures/gifs/6/framez 39.png" type="Texture" id=575]
+[ext_resource path="res://resources/textures/gifs/6/framez 58.png" type="Texture" id=576]
+[ext_resource path="res://resources/textures/gifs/6/framez 88.png" type="Texture" id=577]
+[ext_resource path="res://resources/textures/gifs/6/framez 69.png" type="Texture" id=578]
+[ext_resource path="res://resources/textures/gifs/6/framez 74.png" type="Texture" id=579]
+[ext_resource path="res://resources/textures/gifs/6/framez 35.png" type="Texture" id=580]
+[ext_resource path="res://resources/textures/gifs/6/framez 89.png" type="Texture" id=581]
+[ext_resource path="res://resources/textures/gifs/6/framez 145.png" type="Texture" id=582]
+[ext_resource path="res://resources/textures/gifs/6/framez 146.png" type="Texture" id=583]
+[ext_resource path="res://resources/textures/gifs/6/framez 147.png" type="Texture" id=584]
+[ext_resource path="res://resources/textures/gifs/6/framez 107.png" type="Texture" id=585]
+[ext_resource path="res://resources/textures/gifs/6/framez 120.png" type="Texture" id=586]
+[ext_resource path="res://resources/textures/gifs/6/framez 114.png" type="Texture" id=587]
+[ext_resource path="res://resources/textures/gifs/6/framez 131.png" type="Texture" id=588]
+[ext_resource path="res://resources/textures/gifs/6/framez 93.png" type="Texture" id=589]
+[ext_resource path="res://resources/textures/gifs/6/framez 94.png" type="Texture" id=590]
+[ext_resource path="res://resources/textures/gifs/6/framez 143.png" type="Texture" id=591]
+[ext_resource path="res://resources/textures/gifs/6/framez 148.png" type="Texture" id=592]
+[ext_resource path="res://resources/textures/gifs/6/framez 149.png" type="Texture" id=593]
+[ext_resource path="res://resources/textures/gifs/6/framez 136.png" type="Texture" id=594]
+[ext_resource path="res://resources/textures/gifs/6/framez 106.png" type="Texture" id=595]
+[ext_resource path="res://resources/textures/gifs/6/framez 112.png" type="Texture" id=596]
+[ext_resource path="res://resources/textures/gifs/6/framez 150.png" type="Texture" id=597]
+[ext_resource path="res://resources/textures/gifs/6/framez 97.png" type="Texture" id=598]
+[ext_resource path="res://resources/textures/gifs/6/framez 151.png" type="Texture" id=599]
+[ext_resource path="res://resources/textures/gifs/6/framez 152.png" type="Texture" id=600]
+[ext_resource path="res://resources/textures/gifs/6/framez 153.png" type="Texture" id=601]
+[ext_resource path="res://resources/textures/gifs/6/framez 102.png" type="Texture" id=602]
+[ext_resource path="res://resources/textures/gifs/6/framez 100.png" type="Texture" id=603]
+[ext_resource path="res://resources/textures/gifs/6/framez 154.png" type="Texture" id=604]
+[ext_resource path="res://resources/textures/gifs/6/framez 155.png" type="Texture" id=605]
+[ext_resource path="res://resources/textures/gifs/6/framez 123.png" type="Texture" id=606]
+[ext_resource path="res://resources/textures/gifs/6/framez 127.png" type="Texture" id=607]
+[ext_resource path="res://resources/textures/gifs/6/framez 116.png" type="Texture" id=608]
+[ext_resource path="res://resources/textures/gifs/6/framez 133.png" type="Texture" id=609]
+[ext_resource path="res://resources/textures/gifs/6/framez 113.png" type="Texture" id=610]
+[ext_resource path="res://resources/textures/gifs/6/framez 101.png" type="Texture" id=611]
+[ext_resource path="res://resources/textures/gifs/6/framez 105.png" type="Texture" id=612]
+[ext_resource path="res://resources/textures/gifs/6/framez 122.png" type="Texture" id=613]
+[ext_resource path="res://resources/textures/gifs/6/framez 103.png" type="Texture" id=614]
+[ext_resource path="res://resources/textures/gifs/6/framez 111.png" type="Texture" id=615]
+[ext_resource path="res://resources/textures/gifs/6/framez 110.png" type="Texture" id=616]
+[ext_resource path="res://resources/textures/gifs/6/framez 115.png" type="Texture" id=617]
+[ext_resource path="res://resources/textures/gifs/6/framez 125.png" type="Texture" id=618]
+[ext_resource path="res://resources/textures/gifs/6/framez 129.png" type="Texture" id=619]
+[ext_resource path="res://resources/textures/gifs/6/framez 137.png" type="Texture" id=620]
+[ext_resource path="res://resources/textures/gifs/6/framez 95.png" type="Texture" id=621]
+[ext_resource path="res://resources/textures/gifs/6/framez 104.png" type="Texture" id=622]
+[ext_resource path="res://resources/textures/gifs/6/framez 135.png" type="Texture" id=623]
+[ext_resource path="res://resources/textures/gifs/6/framez 108.png" type="Texture" id=624]
+[ext_resource path="res://resources/textures/gifs/6/framez 117.png" type="Texture" id=625]
+[ext_resource path="res://resources/textures/gifs/6/framez 132.png" type="Texture" id=626]
+[ext_resource path="res://resources/textures/gifs/6/framez 96.png" type="Texture" id=627]
+[ext_resource path="res://resources/textures/gifs/6/framez 98.png" type="Texture" id=628]
+[ext_resource path="res://resources/textures/gifs/6/framez 126.png" type="Texture" id=629]
+[ext_resource path="res://resources/textures/gifs/6/framez 130.png" type="Texture" id=630]
+[ext_resource path="res://resources/textures/gifs/6/framez 118.png" type="Texture" id=631]
+[ext_resource path="res://resources/textures/gifs/6/framez 121.png" type="Texture" id=632]
+[ext_resource path="res://resources/textures/gifs/6/framez 128.png" type="Texture" id=633]
+[ext_resource path="res://resources/textures/gifs/6/framez 119.png" type="Texture" id=634]
+[ext_resource path="res://resources/textures/gifs/6/framez 138.png" type="Texture" id=635]
+[ext_resource path="res://resources/textures/gifs/6/framez 124.png" type="Texture" id=636]
+[ext_resource path="res://resources/textures/gifs/6/framez 134.png" type="Texture" id=637]
+[ext_resource path="res://resources/textures/gifs/6/framez 139.png" type="Texture" id=638]
+[ext_resource path="res://resources/textures/gifs/6/framez 140.png" type="Texture" id=639]
+[ext_resource path="res://resources/textures/gifs/6/framez 99.png" type="Texture" id=640]
+[ext_resource path="res://resources/textures/gifs/6/framez 109.png" type="Texture" id=641]
+[ext_resource path="res://resources/textures/gifs/6/framez 92.png" type="Texture" id=642]
+[ext_resource path="res://resources/textures/gifs/6/framez 141.png" type="Texture" id=643]
+[ext_resource path="res://resources/textures/gifs/6/framez 142.png" type="Texture" id=644]
+[ext_resource path="res://resources/textures/gifs/6/framez 144.png" type="Texture" id=645]
+[ext_resource path="res://resources/textures/shapes_003.png" type="Texture" id=646]
+[ext_resource path="res://resources/textures/gifs/6/framez 160.png" type="Texture" id=647]
+[ext_resource path="res://resources/textures/gifs/6/framez 208.png" type="Texture" id=648]
+[ext_resource path="res://resources/textures/gifs/7/framez 0.png" type="Texture" id=649]
+[ext_resource path="res://resources/textures/gifs/7/framez 1.png" type="Texture" id=650]
+[ext_resource path="res://resources/textures/gifs/7/framez 2.png" type="Texture" id=651]
+[ext_resource path="res://resources/textures/gifs/6/framez 191.png" type="Texture" id=652]
+[ext_resource path="res://resources/textures/gifs/6/framez 167.png" type="Texture" id=653]
+[ext_resource path="res://resources/textures/gifs/7/framez 3.png" type="Texture" id=654]
+[ext_resource path="res://resources/textures/gifs/6/framez 159.png" type="Texture" id=655]
+[ext_resource path="res://resources/textures/gifs/6/framez 164.png" type="Texture" id=656]
+[ext_resource path="res://resources/textures/gifs/6/framez 201.png" type="Texture" id=657]
+[ext_resource path="res://resources/textures/gifs/6/framez 175.png" type="Texture" id=658]
+[ext_resource path="res://resources/textures/gifs/7/framez 4.png" type="Texture" id=659]
+[ext_resource path="res://resources/textures/gifs/6/framez 194.png" type="Texture" id=660]
+[ext_resource path="res://resources/textures/gifs/6/framez 193.png" type="Texture" id=661]
+[ext_resource path="res://resources/textures/gifs/6/framez 197.png" type="Texture" id=662]
+[ext_resource path="res://resources/textures/gifs/6/framez 202.png" type="Texture" id=663]
+[ext_resource path="res://resources/textures/gifs/6/framez 156.png" type="Texture" id=664]
+[ext_resource path="res://resources/textures/gifs/6/framez 203.png" type="Texture" id=665]
+[ext_resource path="res://resources/textures/gifs/7/framez 5.png" type="Texture" id=666]
+[ext_resource path="res://resources/textures/gifs/7/framez 6.png" type="Texture" id=667]
+[ext_resource path="res://resources/textures/gifs/6/framez 186.png" type="Texture" id=668]
+[ext_resource path="res://resources/textures/gifs/7/framez 7.png" type="Texture" id=669]
+[ext_resource path="res://resources/textures/gifs/7/framez 8.png" type="Texture" id=670]
+[ext_resource path="res://resources/textures/gifs/7/framez 9.png" type="Texture" id=671]
+[ext_resource path="res://resources/textures/gifs/6/framez 187.png" type="Texture" id=672]
+[ext_resource path="res://resources/textures/gifs/6/framez 169.png" type="Texture" id=673]
+[ext_resource path="res://resources/textures/gifs/6/framez 168.png" type="Texture" id=674]
+[ext_resource path="res://resources/textures/gifs/6/framez 173.png" type="Texture" id=675]
+[ext_resource path="res://resources/textures/gifs/6/framez 161.png" type="Texture" id=676]
+[ext_resource path="res://resources/textures/gifs/6/framez 176.png" type="Texture" id=677]
+[ext_resource path="res://resources/textures/gifs/6/framez 170.png" type="Texture" id=678]
+[ext_resource path="res://resources/textures/gifs/6/framez 163.png" type="Texture" id=679]
+[ext_resource path="res://resources/textures/gifs/6/framez 179.png" type="Texture" id=680]
+[ext_resource path="res://resources/textures/gifs/6/framez 183.png" type="Texture" id=681]
+[ext_resource path="res://resources/textures/gifs/6/framez 182.png" type="Texture" id=682]
+[ext_resource path="res://resources/textures/gifs/6/framez 177.png" type="Texture" id=683]
+[ext_resource path="res://resources/textures/gifs/6/framez 185.png" type="Texture" id=684]
+[ext_resource path="res://resources/textures/gifs/6/framez 189.png" type="Texture" id=685]
+[ext_resource path="res://resources/textures/gifs/6/framez 190.png" type="Texture" id=686]
+[ext_resource path="res://resources/textures/gifs/6/framez 158.png" type="Texture" id=687]
+[ext_resource path="res://resources/textures/gifs/6/framez 180.png" type="Texture" id=688]
+[ext_resource path="res://resources/textures/gifs/6/framez 192.png" type="Texture" id=689]
+[ext_resource path="res://resources/textures/gifs/6/framez 178.png" type="Texture" id=690]
+[ext_resource path="res://resources/textures/gifs/6/framez 166.png" type="Texture" id=691]
+[ext_resource path="res://resources/textures/gifs/6/framez 165.png" type="Texture" id=692]
+[ext_resource path="res://resources/textures/gifs/6/framez 195.png" type="Texture" id=693]
+[ext_resource path="res://resources/textures/gifs/6/framez 172.png" type="Texture" id=694]
+[ext_resource path="res://resources/textures/gifs/6/framez 188.png" type="Texture" id=695]
+[ext_resource path="res://resources/textures/gifs/6/framez 196.png" type="Texture" id=696]
+[ext_resource path="res://resources/textures/gifs/6/framez 198.png" type="Texture" id=697]
+[ext_resource path="res://resources/textures/gifs/6/framez 199.png" type="Texture" id=698]
+[ext_resource path="res://resources/textures/gifs/6/framez 174.png" type="Texture" id=699]
+[ext_resource path="res://resources/textures/gifs/6/framez 200.png" type="Texture" id=700]
+[ext_resource path="res://resources/textures/gifs/6/framez 162.png" type="Texture" id=701]
+[ext_resource path="res://resources/textures/gifs/6/framez 181.png" type="Texture" id=702]
+[ext_resource path="res://resources/textures/gifs/6/framez 204.png" type="Texture" id=703]
+[ext_resource path="res://resources/textures/gifs/6/framez 171.png" type="Texture" id=704]
+[ext_resource path="res://resources/textures/gifs/6/framez 205.png" type="Texture" id=705]
+[ext_resource path="res://resources/textures/gifs/6/framez 184.png" type="Texture" id=706]
+[ext_resource path="res://resources/textures/gifs/6/framez 206.png" type="Texture" id=707]
+[ext_resource path="res://resources/textures/gifs/6/framez 157.png" type="Texture" id=708]
+[ext_resource path="res://resources/textures/gifs/6/framez 207.png" type="Texture" id=709]
+[ext_resource path="res://resources/textures/gifs/7/framez 13.png" type="Texture" id=710]
+[ext_resource path="res://resources/textures/gifs/7/framez 22.png" type="Texture" id=711]
+[ext_resource path="res://resources/textures/gifs/7/framez 19.png" type="Texture" id=712]
+[ext_resource path="res://resources/textures/gifs/7/framez 28.png" type="Texture" id=713]
+[ext_resource path="res://resources/textures/gifs/7/framez 17.png" type="Texture" id=714]
+[ext_resource path="res://resources/textures/gifs/7/framez 24.png" type="Texture" id=715]
+[ext_resource path="res://resources/textures/gifs/7/framez 25.png" type="Texture" id=716]
+[ext_resource path="res://resources/textures/gifs/7/framez 10.png" type="Texture" id=717]
+[ext_resource path="res://resources/textures/gifs/7/framez 15.png" type="Texture" id=718]
+[ext_resource path="res://resources/textures/gifs/7/framez 20.png" type="Texture" id=719]
+[ext_resource path="res://resources/textures/gifs/7/framez 11.png" type="Texture" id=720]
+[ext_resource path="res://resources/textures/gifs/7/framez 27.png" type="Texture" id=721]
+[ext_resource path="res://resources/textures/gifs/7/framez 29.png" type="Texture" id=722]
+[ext_resource path="res://resources/textures/gifs/7/framez 18.png" type="Texture" id=723]
+[ext_resource path="res://resources/textures/gifs/7/framez 14.png" type="Texture" id=724]
+[ext_resource path="res://resources/textures/gifs/7/framez 30.png" type="Texture" id=725]
+[ext_resource path="res://resources/textures/gifs/7/framez 21.png" type="Texture" id=726]
+[ext_resource path="res://resources/textures/gifs/7/framez 31.png" type="Texture" id=727]
+[ext_resource path="res://resources/textures/gifs/7/framez 32.png" type="Texture" id=728]
+[ext_resource path="res://resources/textures/gifs/7/framez 33.png" type="Texture" id=729]
+[ext_resource path="res://resources/textures/gifs/7/framez 34.png" type="Texture" id=730]
+[ext_resource path="res://resources/textures/gifs/7/framez 23.png" type="Texture" id=731]
+[ext_resource path="res://resources/textures/gifs/7/framez 35.png" type="Texture" id=732]
+[ext_resource path="res://resources/textures/gifs/7/framez 12.png" type="Texture" id=733]
+[ext_resource path="res://resources/textures/gifs/7/framez 16.png" type="Texture" id=734]
+[ext_resource path="res://resources/textures/gifs/7/framez 26.png" type="Texture" id=735]
+[ext_resource path="res://resources/textures/gifs/7/framez 105.png" type="Texture" id=736]
+[ext_resource path="res://resources/textures/gifs/7/framez 142.png" type="Texture" id=737]
+[ext_resource path="res://resources/textures/gifs/7/framez 118.png" type="Texture" id=738]
+[ext_resource path="res://resources/textures/gifs/7/framez 129.png" type="Texture" id=739]
+[ext_resource path="res://resources/textures/gifs/7/framez 132.png" type="Texture" id=740]
+[ext_resource path="res://resources/textures/gifs/7/framez 145.png" type="Texture" id=741]
+[ext_resource path="res://resources/textures/gifs/7/framez 127.png" type="Texture" id=742]
+[ext_resource path="res://resources/textures/gifs/7/framez 160.png" type="Texture" id=743]
+[ext_resource path="res://resources/textures/gifs/7/framez 161.png" type="Texture" id=744]
+[ext_resource path="res://resources/textures/gifs/7/framez 134.png" type="Texture" id=745]
+[ext_resource path="res://resources/textures/gifs/7/framez 141.png" type="Texture" id=746]
+[ext_resource path="res://resources/textures/gifs/7/framez 123.png" type="Texture" id=747]
+[ext_resource path="res://resources/textures/gifs/7/framez 139.png" type="Texture" id=748]
+[ext_resource path="res://resources/textures/gifs/7/framez 162.png" type="Texture" id=749]
+[ext_resource path="res://resources/textures/gifs/7/framez 163.png" type="Texture" id=750]
+[ext_resource path="res://resources/textures/gifs/7/framez 101.png" type="Texture" id=751]
+[ext_resource path="res://resources/textures/gifs/7/framez 115.png" type="Texture" id=752]
+[ext_resource path="res://resources/textures/gifs/7/framez 102.png" type="Texture" id=753]
+[ext_resource path="res://resources/textures/gifs/7/framez 133.png" type="Texture" id=754]
+[ext_resource path="res://resources/textures/gifs/7/framez 138.png" type="Texture" id=755]
+[ext_resource path="res://resources/textures/gifs/7/framez 140.png" type="Texture" id=756]
+[ext_resource path="res://resources/textures/gifs/7/framez 144.png" type="Texture" id=757]
+[ext_resource path="res://resources/textures/gifs/7/framez 117.png" type="Texture" id=758]
+[ext_resource path="res://resources/textures/gifs/7/framez 120.png" type="Texture" id=759]
+[ext_resource path="res://resources/textures/gifs/7/framez 149.png" type="Texture" id=760]
+[ext_resource path="res://resources/textures/gifs/7/framez 108.png" type="Texture" id=761]
+[ext_resource path="res://resources/textures/gifs/7/framez 130.png" type="Texture" id=762]
+[ext_resource path="res://resources/textures/gifs/7/framez 103.png" type="Texture" id=763]
+[ext_resource path="res://resources/textures/gifs/7/framez 106.png" type="Texture" id=764]
+[ext_resource path="res://resources/textures/gifs/7/framez 124.png" type="Texture" id=765]
+[ext_resource path="res://resources/textures/gifs/7/framez 147.png" type="Texture" id=766]
+[ext_resource path="res://resources/textures/gifs/7/framez 109.png" type="Texture" id=767]
+[ext_resource path="res://resources/textures/gifs/7/framez 153.png" type="Texture" id=768]
+[ext_resource path="res://resources/textures/gifs/7/framez 146.png" type="Texture" id=769]
+[ext_resource path="res://resources/textures/gifs/7/framez 126.png" type="Texture" id=770]
+[ext_resource path="res://resources/textures/gifs/7/framez 135.png" type="Texture" id=771]
+[ext_resource path="res://resources/textures/gifs/7/framez 111.png" type="Texture" id=772]
+[ext_resource path="res://resources/textures/gifs/7/framez 148.png" type="Texture" id=773]
+[ext_resource path="res://resources/textures/gifs/7/framez 136.png" type="Texture" id=774]
+[ext_resource path="res://resources/textures/gifs/7/framez 122.png" type="Texture" id=775]
+[ext_resource path="res://resources/textures/gifs/7/framez 154.png" type="Texture" id=776]
+[ext_resource path="res://resources/textures/gifs/7/framez 155.png" type="Texture" id=777]
+[ext_resource path="res://resources/textures/gifs/7/framez 113.png" type="Texture" id=778]
+[ext_resource path="res://resources/textures/gifs/7/framez 131.png" type="Texture" id=779]
+[ext_resource path="res://resources/textures/gifs/7/framez 110.png" type="Texture" id=780]
+[ext_resource path="res://resources/textures/gifs/7/framez 116.png" type="Texture" id=781]
+[ext_resource path="res://resources/textures/gifs/7/framez 157.png" type="Texture" id=782]
+[ext_resource path="res://resources/textures/gifs/7/framez 158.png" type="Texture" id=783]
+[ext_resource path="res://resources/textures/gifs/7/framez 159.png" type="Texture" id=784]
+[ext_resource path="res://resources/textures/gifs/7/framez 121.png" type="Texture" id=785]
+[ext_resource path="res://resources/textures/gifs/7/framez 143.png" type="Texture" id=786]
+[ext_resource path="res://resources/textures/gifs/7/framez 107.png" type="Texture" id=787]
+[ext_resource path="res://resources/textures/gifs/7/framez 128.png" type="Texture" id=788]
+[ext_resource path="res://resources/textures/gifs/7/framez 104.png" type="Texture" id=789]
+[ext_resource path="res://resources/textures/gifs/7/framez 119.png" type="Texture" id=790]
+[ext_resource path="res://resources/textures/gifs/7/framez 150.png" type="Texture" id=791]
+[ext_resource path="res://resources/textures/gifs/7/framez 152.png" type="Texture" id=792]
+[ext_resource path="res://resources/textures/gifs/7/framez 156.png" type="Texture" id=793]
+[ext_resource path="res://resources/textures/gifs/7/framez 125.png" type="Texture" id=794]
+[ext_resource path="res://resources/textures/gifs/7/framez 112.png" type="Texture" id=795]
+[ext_resource path="res://resources/textures/gifs/7/framez 114.png" type="Texture" id=796]
+[ext_resource path="res://resources/textures/gifs/7/framez 137.png" type="Texture" id=797]
+[ext_resource path="res://resources/textures/gifs/7/framez 151.png" type="Texture" id=798]
+[ext_resource path="res://resources/textures/gifs/7/framez 100.png" type="Texture" id=799]
+[ext_resource path="res://resources/textures/gifs/7/framez 175.png" type="Texture" id=800]
+[ext_resource path="res://resources/textures/gifs/7/framez 178.png" type="Texture" id=801]
+[ext_resource path="res://resources/textures/gifs/7/framez 166.png" type="Texture" id=802]
+[ext_resource path="res://resources/textures/gifs/7/framez 173.png" type="Texture" id=803]
+[ext_resource path="res://resources/textures/gifs/7/framez 164.png" type="Texture" id=804]
+[ext_resource path="res://resources/textures/gifs/7/framez 176.png" type="Texture" id=805]
+[ext_resource path="res://resources/textures/gifs/7/framez 165.png" type="Texture" id=806]
+[ext_resource path="res://resources/textures/gifs/7/framez 167.png" type="Texture" id=807]
+[ext_resource path="res://resources/textures/gifs/7/framez 174.png" type="Texture" id=808]
+[ext_resource path="res://resources/textures/gifs/7/framez 169.png" type="Texture" id=809]
+[ext_resource path="res://resources/textures/gifs/7/framez 168.png" type="Texture" id=810]
+[ext_resource path="res://resources/textures/gifs/7/framez 177.png" type="Texture" id=811]
+[ext_resource path="res://resources/textures/gifs/7/framez 172.png" type="Texture" id=812]
+[ext_resource path="res://resources/textures/gifs/7/framez 170.png" type="Texture" id=813]
+[ext_resource path="res://resources/textures/gifs/7/framez 171.png" type="Texture" id=814]
+
+[sub_resource type="DynamicFont" id=1]
+size = 57
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 29
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 48
+use_mipmaps = true
+font_data = ExtResource( 5 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 71 ), ExtResource( 66 ), ExtResource( 52 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 46 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 34 ), ExtResource( 17 ), ExtResource( 72 ), ExtResource( 38 ), ExtResource( 61 ), ExtResource( 31 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 30 ), ExtResource( 64 ), ExtResource( 43 ), ExtResource( 27 ), ExtResource( 67 ), ExtResource( 40 ), ExtResource( 69 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 24 ), ExtResource( 53 ), ExtResource( 32 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 33 ), ExtResource( 70 ), ExtResource( 73 ), ExtResource( 20 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 35 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 60 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 11 ), ExtResource( 57 ), ExtResource( 12 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 13 ), ExtResource( 36 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 45 ), ExtResource( 54 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 51 ), ExtResource( 14 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 63 ), ExtResource( 84 ), ExtResource( 76 ), ExtResource( 79 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 75 ), ExtResource( 85 ), ExtResource( 77 ), ExtResource( 80 ), ExtResource( 86 ), ExtResource( 74 ), ExtResource( 78 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 98 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 139 ), ExtResource( 162 ), ExtResource( 115 ), ExtResource( 146 ), ExtResource( 151 ), ExtResource( 160 ), ExtResource( 120 ), ExtResource( 122 ), ExtResource( 110 ), ExtResource( 117 ), ExtResource( 105 ), ExtResource( 153 ), ExtResource( 106 ), ExtResource( 154 ), ExtResource( 145 ), ExtResource( 156 ), ExtResource( 118 ), ExtResource( 161 ), ExtResource( 124 ), ExtResource( 123 ), ExtResource( 159 ), ExtResource( 158 ), ExtResource( 163 ), ExtResource( 147 ), ExtResource( 142 ), ExtResource( 121 ), ExtResource( 125 ), ExtResource( 157 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 119 ), ExtResource( 113 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 109 ), ExtResource( 102 ), ExtResource( 126 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 152 ), ExtResource( 127 ), ExtResource( 155 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 111 ), ExtResource( 129 ), ExtResource( 131 ), ExtResource( 144 ), ExtResource( 112 ), ExtResource( 128 ), ExtResource( 114 ), ExtResource( 150 ), ExtResource( 116 ), ExtResource( 130 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 138 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 143 ), ExtResource( 170 ), ExtResource( 169 ), ExtResource( 171 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 180 ), ExtResource( 199 ), ExtResource( 177 ), ExtResource( 178 ), ExtResource( 214 ), ExtResource( 206 ), ExtResource( 210 ), ExtResource( 183 ), ExtResource( 172 ), ExtResource( 175 ), ExtResource( 184 ), ExtResource( 179 ), ExtResource( 198 ), ExtResource( 182 ), ExtResource( 185 ), ExtResource( 195 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 200 ), ExtResource( 186 ), ExtResource( 201 ), ExtResource( 194 ), ExtResource( 209 ), ExtResource( 181 ), ExtResource( 187 ), ExtResource( 191 ), ExtResource( 211 ), ExtResource( 188 ), ExtResource( 190 ), ExtResource( 173 ), ExtResource( 197 ), ExtResource( 202 ), ExtResource( 176 ), ExtResource( 203 ), ExtResource( 205 ), ExtResource( 204 ), ExtResource( 174 ), ExtResource( 196 ), ExtResource( 189 ), ExtResource( 192 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 193 ), ExtResource( 215 ), ExtResource( 216 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 235 ), ExtResource( 217 ), ExtResource( 233 ), ExtResource( 232 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 222 ), ExtResource( 227 ), ExtResource( 218 ), ExtResource( 220 ), ExtResource( 219 ), ExtResource( 221 ), ExtResource( 229 ), ExtResource( 228 ), ExtResource( 234 ), ExtResource( 223 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 295 ), ExtResource( 246 ), ExtResource( 268 ), ExtResource( 256 ), ExtResource( 291 ), ExtResource( 294 ), ExtResource( 241 ), ExtResource( 257 ), ExtResource( 287 ), ExtResource( 285 ), ExtResource( 244 ), ExtResource( 258 ), ExtResource( 289 ), ExtResource( 298 ), ExtResource( 262 ), ExtResource( 267 ), ExtResource( 271 ), ExtResource( 269 ), ExtResource( 274 ), ExtResource( 264 ), ExtResource( 253 ), ExtResource( 272 ), ExtResource( 273 ), ExtResource( 292 ), ExtResource( 296 ), ExtResource( 249 ), ExtResource( 279 ), ExtResource( 283 ), ExtResource( 297 ), ExtResource( 250 ), ExtResource( 284 ), ExtResource( 247 ), ExtResource( 236 ), ExtResource( 281 ), ExtResource( 270 ), ExtResource( 237 ), ExtResource( 280 ), ExtResource( 282 ), ExtResource( 275 ), ExtResource( 238 ), ExtResource( 266 ), ExtResource( 288 ), ExtResource( 254 ), ExtResource( 248 ), ExtResource( 290 ), ExtResource( 276 ), ExtResource( 251 ), ExtResource( 299 ), ExtResource( 252 ), ExtResource( 277 ), ExtResource( 242 ), ExtResource( 239 ), ExtResource( 286 ), ExtResource( 255 ), ExtResource( 293 ), ExtResource( 259 ), ExtResource( 260 ), ExtResource( 263 ), ExtResource( 240 ), ExtResource( 278 ), ExtResource( 243 ), ExtResource( 265 ), ExtResource( 245 ), ExtResource( 261 ), ExtResource( 301 ), ExtResource( 305 ), ExtResource( 303 ), ExtResource( 306 ), ExtResource( 304 ), ExtResource( 307 ), ExtResource( 309 ), ExtResource( 308 ), ExtResource( 302 ), ExtResource( 312 ), ExtResource( 310 ), ExtResource( 311 ), ExtResource( 300 ), ExtResource( 428 ), ExtResource( 430 ), ExtResource( 435 ), ExtResource( 426 ), ExtResource( 429 ), ExtResource( 380 ), ExtResource( 402 ), ExtResource( 407 ), ExtResource( 385 ), ExtResource( 388 ), ExtResource( 409 ), ExtResource( 438 ), ExtResource( 421 ), ExtResource( 412 ), ExtResource( 417 ), ExtResource( 408 ), ExtResource( 387 ), ExtResource( 420 ), ExtResource( 436 ), ExtResource( 410 ), ExtResource( 377 ), ExtResource( 399 ), ExtResource( 431 ), ExtResource( 411 ), ExtResource( 406 ), ExtResource( 437 ), ExtResource( 396 ), ExtResource( 405 ), ExtResource( 381 ), ExtResource( 416 ), ExtResource( 389 ), ExtResource( 400 ), ExtResource( 432 ), ExtResource( 413 ), ExtResource( 418 ), ExtResource( 403 ), ExtResource( 397 ), ExtResource( 434 ), ExtResource( 433 ), ExtResource( 439 ), ExtResource( 427 ), ExtResource( 390 ), ExtResource( 419 ), ExtResource( 422 ), ExtResource( 414 ), ExtResource( 415 ), ExtResource( 378 ), ExtResource( 423 ), ExtResource( 391 ), ExtResource( 424 ), ExtResource( 425 ), ExtResource( 395 ), ExtResource( 440 ), ExtResource( 379 ), ExtResource( 382 ), ExtResource( 392 ), ExtResource( 398 ), ExtResource( 383 ), ExtResource( 384 ), ExtResource( 386 ), ExtResource( 393 ), ExtResource( 401 ), ExtResource( 394 ), ExtResource( 404 ), ExtResource( 444 ), ExtResource( 445 ), ExtResource( 452 ), ExtResource( 446 ), ExtResource( 453 ), ExtResource( 441 ), ExtResource( 447 ), ExtResource( 442 ), ExtResource( 443 ), ExtResource( 450 ), ExtResource( 449 ), ExtResource( 448 ), ExtResource( 451 ), ExtResource( 342 ), ExtResource( 370 ), ExtResource( 331 ), ExtResource( 371 ), ExtResource( 343 ), ExtResource( 348 ), ExtResource( 374 ), ExtResource( 332 ), ExtResource( 317 ), ExtResource( 314 ), ExtResource( 352 ), ExtResource( 364 ), ExtResource( 344 ), ExtResource( 335 ), ExtResource( 375 ), ExtResource( 369 ), ExtResource( 321 ), ExtResource( 336 ), ExtResource( 345 ), ExtResource( 372 ), ExtResource( 338 ), ExtResource( 341 ), ExtResource( 322 ), ExtResource( 313 ), ExtResource( 328 ), ExtResource( 330 ), ExtResource( 353 ), ExtResource( 333 ), ExtResource( 363 ), ExtResource( 362 ), ExtResource( 356 ), ExtResource( 339 ), ExtResource( 354 ), ExtResource( 327 ), ExtResource( 351 ), ExtResource( 365 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 349 ), ExtResource( 315 ), ExtResource( 373 ), ExtResource( 334 ), ExtResource( 340 ), ExtResource( 323 ), ExtResource( 326 ), ExtResource( 376 ), ExtResource( 337 ), ExtResource( 316 ), ExtResource( 318 ), ExtResource( 324 ), ExtResource( 329 ), ExtResource( 346 ), ExtResource( 347 ), ExtResource( 355 ), ExtResource( 350 ), ExtResource( 357 ), ExtResource( 358 ), ExtResource( 319 ), ExtResource( 359 ), ExtResource( 360 ), ExtResource( 320 ), ExtResource( 366 ), ExtResource( 325 ), ExtResource( 361 ), ExtResource( 367 ), ExtResource( 368 ), ExtResource( 547 ), ExtResource( 518 ), ExtResource( 569 ), ExtResource( 527 ), ExtResource( 544 ), ExtResource( 572 ), ExtResource( 567 ), ExtResource( 580 ), ExtResource( 562 ), ExtResource( 523 ), ExtResource( 524 ), ExtResource( 575 ), ExtResource( 542 ), ExtResource( 528 ), ExtResource( 561 ), ExtResource( 551 ), ExtResource( 546 ), ExtResource( 534 ), ExtResource( 552 ), ExtResource( 529 ), ExtResource( 553 ), ExtResource( 533 ), ExtResource( 548 ), ExtResource( 563 ), ExtResource( 560 ), ExtResource( 519 ), ExtResource( 530 ), ExtResource( 525 ), ExtResource( 531 ), ExtResource( 557 ), ExtResource( 576 ), ExtResource( 564 ), ExtResource( 526 ), ExtResource( 520 ), ExtResource( 549 ), ExtResource( 565 ), ExtResource( 543 ), ExtResource( 535 ), ExtResource( 532 ), ExtResource( 521 ), ExtResource( 550 ), ExtResource( 578 ), ExtResource( 536 ), ExtResource( 554 ), ExtResource( 566 ), ExtResource( 555 ), ExtResource( 579 ), ExtResource( 568 ), ExtResource( 556 ), ExtResource( 559 ), ExtResource( 558 ), ExtResource( 537 ), ExtResource( 570 ), ExtResource( 522 ), ExtResource( 573 ), ExtResource( 571 ), ExtResource( 545 ), ExtResource( 538 ), ExtResource( 539 ), ExtResource( 574 ), ExtResource( 577 ), ExtResource( 581 ), ExtResource( 540 ), ExtResource( 541 ), ExtResource( 642 ), ExtResource( 589 ), ExtResource( 590 ), ExtResource( 621 ), ExtResource( 627 ), ExtResource( 598 ), ExtResource( 628 ), ExtResource( 640 ), ExtResource( 603 ), ExtResource( 611 ), ExtResource( 602 ), ExtResource( 614 ), ExtResource( 622 ), ExtResource( 612 ), ExtResource( 595 ), ExtResource( 585 ), ExtResource( 624 ), ExtResource( 641 ), ExtResource( 616 ), ExtResource( 615 ), ExtResource( 596 ), ExtResource( 610 ), ExtResource( 587 ), ExtResource( 617 ), ExtResource( 608 ), ExtResource( 625 ), ExtResource( 631 ), ExtResource( 634 ), ExtResource( 586 ), ExtResource( 632 ), ExtResource( 613 ), ExtResource( 606 ), ExtResource( 636 ), ExtResource( 618 ), ExtResource( 629 ), ExtResource( 607 ), ExtResource( 633 ), ExtResource( 619 ), ExtResource( 630 ), ExtResource( 588 ), ExtResource( 626 ), ExtResource( 609 ), ExtResource( 637 ), ExtResource( 623 ), ExtResource( 594 ), ExtResource( 620 ), ExtResource( 635 ), ExtResource( 638 ), ExtResource( 639 ), ExtResource( 643 ), ExtResource( 644 ), ExtResource( 591 ), ExtResource( 645 ), ExtResource( 582 ), ExtResource( 583 ), ExtResource( 584 ), ExtResource( 592 ), ExtResource( 593 ), ExtResource( 597 ), ExtResource( 599 ), ExtResource( 600 ), ExtResource( 601 ), ExtResource( 604 ), ExtResource( 605 ), ExtResource( 664 ), ExtResource( 708 ), ExtResource( 687 ), ExtResource( 655 ), ExtResource( 647 ), ExtResource( 676 ), ExtResource( 701 ), ExtResource( 679 ), ExtResource( 656 ), ExtResource( 692 ), ExtResource( 691 ), ExtResource( 653 ), ExtResource( 674 ), ExtResource( 673 ), ExtResource( 678 ), ExtResource( 704 ), ExtResource( 694 ), ExtResource( 675 ), ExtResource( 699 ), ExtResource( 658 ), ExtResource( 677 ), ExtResource( 683 ), ExtResource( 690 ), ExtResource( 680 ), ExtResource( 688 ), ExtResource( 702 ), ExtResource( 682 ), ExtResource( 681 ), ExtResource( 706 ), ExtResource( 684 ), ExtResource( 668 ), ExtResource( 672 ), ExtResource( 695 ), ExtResource( 685 ), ExtResource( 686 ), ExtResource( 652 ), ExtResource( 689 ), ExtResource( 661 ), ExtResource( 660 ), ExtResource( 693 ), ExtResource( 696 ), ExtResource( 662 ), ExtResource( 697 ), ExtResource( 698 ), ExtResource( 700 ), ExtResource( 657 ), ExtResource( 663 ), ExtResource( 665 ), ExtResource( 703 ), ExtResource( 705 ), ExtResource( 707 ), ExtResource( 709 ), ExtResource( 648 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ ExtResource( 649 ), ExtResource( 650 ), ExtResource( 651 ), ExtResource( 654 ), ExtResource( 659 ), ExtResource( 666 ), ExtResource( 667 ), ExtResource( 669 ), ExtResource( 670 ), ExtResource( 671 ), ExtResource( 717 ), ExtResource( 720 ), ExtResource( 733 ), ExtResource( 710 ), ExtResource( 724 ), ExtResource( 718 ), ExtResource( 734 ), ExtResource( 714 ), ExtResource( 723 ), ExtResource( 712 ), ExtResource( 719 ), ExtResource( 726 ), ExtResource( 711 ), ExtResource( 731 ), ExtResource( 715 ), ExtResource( 716 ), ExtResource( 735 ), ExtResource( 721 ), ExtResource( 713 ), ExtResource( 722 ), ExtResource( 725 ), ExtResource( 727 ), ExtResource( 728 ), ExtResource( 729 ), ExtResource( 730 ), ExtResource( 732 ), ExtResource( 470 ), ExtResource( 492 ), ExtResource( 493 ), ExtResource( 496 ), ExtResource( 512 ), ExtResource( 472 ), ExtResource( 498 ), ExtResource( 458 ), ExtResource( 499 ), ExtResource( 500 ), ExtResource( 480 ), ExtResource( 487 ), ExtResource( 490 ), ExtResource( 473 ), ExtResource( 501 ), ExtResource( 513 ), ExtResource( 497 ), ExtResource( 474 ), ExtResource( 465 ), ExtResource( 508 ), ExtResource( 502 ), ExtResource( 477 ), ExtResource( 471 ), ExtResource( 462 ), ExtResource( 505 ), ExtResource( 456 ), ExtResource( 491 ), ExtResource( 475 ), ExtResource( 494 ), ExtResource( 481 ), ExtResource( 476 ), ExtResource( 504 ), ExtResource( 506 ), ExtResource( 457 ), ExtResource( 503 ), ExtResource( 463 ), ExtResource( 507 ), ExtResource( 478 ), ExtResource( 510 ), ExtResource( 466 ), ExtResource( 459 ), ExtResource( 467 ), ExtResource( 464 ), ExtResource( 468 ), ExtResource( 495 ), ExtResource( 509 ), ExtResource( 514 ), ExtResource( 511 ), ExtResource( 515 ), ExtResource( 469 ), ExtResource( 460 ), ExtResource( 516 ), ExtResource( 479 ), ExtResource( 482 ), ExtResource( 461 ), ExtResource( 488 ), ExtResource( 483 ), ExtResource( 484 ), ExtResource( 517 ), ExtResource( 454 ), ExtResource( 455 ), ExtResource( 485 ), ExtResource( 486 ), ExtResource( 489 ), ExtResource( 799 ), ExtResource( 751 ), ExtResource( 753 ), ExtResource( 763 ), ExtResource( 789 ), ExtResource( 736 ), ExtResource( 764 ), ExtResource( 787 ), ExtResource( 761 ), ExtResource( 767 ), ExtResource( 780 ), ExtResource( 772 ), ExtResource( 795 ), ExtResource( 778 ), ExtResource( 796 ), ExtResource( 752 ), ExtResource( 781 ), ExtResource( 758 ), ExtResource( 738 ), ExtResource( 790 ), ExtResource( 759 ), ExtResource( 785 ), ExtResource( 775 ), ExtResource( 747 ), ExtResource( 765 ), ExtResource( 794 ), ExtResource( 770 ), ExtResource( 742 ), ExtResource( 788 ), ExtResource( 739 ), ExtResource( 762 ), ExtResource( 779 ), ExtResource( 740 ), ExtResource( 754 ), ExtResource( 745 ), ExtResource( 771 ), ExtResource( 774 ), ExtResource( 797 ), ExtResource( 755 ), ExtResource( 748 ), ExtResource( 756 ), ExtResource( 746 ), ExtResource( 737 ), ExtResource( 786 ), ExtResource( 757 ), ExtResource( 741 ), ExtResource( 769 ), ExtResource( 766 ), ExtResource( 773 ), ExtResource( 760 ), ExtResource( 791 ), ExtResource( 798 ), ExtResource( 792 ), ExtResource( 768 ), ExtResource( 776 ), ExtResource( 777 ), ExtResource( 793 ), ExtResource( 782 ), ExtResource( 783 ), ExtResource( 784 ), ExtResource( 743 ), ExtResource( 744 ), ExtResource( 749 ), ExtResource( 750 ), ExtResource( 804 ), ExtResource( 806 ), ExtResource( 802 ), ExtResource( 807 ), ExtResource( 810 ), ExtResource( 809 ), ExtResource( 813 ), ExtResource( 814 ), ExtResource( 812 ), ExtResource( 803 ), ExtResource( 808 ), ExtResource( 800 ), ExtResource( 805 ), ExtResource( 811 ), ExtResource( 801 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[sub_resource type="DynamicFont" id=7]
+size = 27
+use_mipmaps = true
+font_data = ExtResource( 2 )
+
+[node name="page 2" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]
+
+[node name="NinePatchRect2" parent="Node2D" index="0"]
+margin_bottom = 2950.0
+
+[node name="NinePatchRect" parent="Node2D" index="1"]
+margin_left = 130.0
+margin_top = 10.0
+margin_right = 874.0
+margin_bottom = 2930.0
+
+[node name="Label" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 150.0
+margin_top = 20.0
+margin_right = 850.0
+margin_bottom = 113.0
+custom_fonts/font = SubResource( 1 )
+text = "Paul Blart Tweetcart"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 152.0
+margin_top = 80.0
+margin_right = 852.0
+margin_bottom = 173.0
+custom_fonts/font = SubResource( 6 )
+text = "Episode 1: creative use of shapes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 152.0
+margin_top = 113.0
+margin_right = 1946.0
+margin_bottom = 2210.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = SubResource( 5 )
+text = "
+Code art (also called generative art) is exactly what it sounds like: Pieces of art generated by a computer program. It’s a truely fascinating subject that blurs the lines between creative and analytical thinking.
+
+It’s also a pretty hugely umbrella term. “Art generated by code” describes lots of things. It could be something interactive, or it could be something just animated, or it could be a static image. It could be procedurally generated, or the same every time.
+
+“Tweetcarts” are a subset of code art programs that (1) are small enough to fit in the length of a byte, and (2) are valid cartridges for a fantasy console, such as PICO-8. The challenge here is two-fold: You have to minimize the program enough to fit in such a small space, and you have a pretty limited toolbox available.
+
+There are lots of great resources for code golf and minimizing character count. So, instead, let’s tackle the second challenge, of working with a small subset.But how can this:"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 152.0
+margin_top = 920.0
+margin_right = 985.0
+margin_bottom = 3017.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = SubResource( 5 )
+text = "turn into this    -->
+
+Well, the answer, turns out, is creative use of shapes! Besides the text, everything in this image is made of circles. This is pretty easy to see if we look at each piece on its own:
+
+
+
+
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Node2D/Label5"]
+position = Vector2( 1341.18, 379.719 )
+scale = Vector2( 3.54422, 3.25773 )
+frames = SubResource( 8 )
+frame = 146
+playing = true
+
+[node name="Label6" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 490.0
+margin_top = 1240.0
+margin_right = 1430.0
+margin_bottom = 1837.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = SubResource( 5 )
+text = "The wonderfully wiggly tentacles are all made up of ten circles. Each segment is a few pixels below the previous one, and is a little smaller. Its x position is offset by a cosine function. The lower down the segment, the faster it moves!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Node2D/Label6"]
+position = Vector2( -457.222, 216.982 )
+scale = Vector2( 3.26046, 2.99691 )
+frames = SubResource( 9 )
+frame = 201
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Node2D/Label6"]
+position = Vector2( 457.222, 1030.67 )
+scale = Vector2( 3.6147, 3.32252 )
+frames = SubResource( 10 )
+frame = 23
+playing = true
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="Node2D/Label6"]
+position = Vector2( 482.623, 4122.66 )
+scale = Vector2( 3.59337, 3.28117 )
+frames = SubResource( 11 )
+frame = 73
+playing = true
+
+[node name="Label7" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 146.0
+margin_top = 1480.0
+margin_right = 981.0
+margin_bottom = 2377.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = SubResource( 5 )
+text = "The totally triangular head is made up of circles as well! It’s drawn with a nested for loop. This means that, first, it draws ten circles in a line, then goes back to the first position and starts a new line from there, but at a different angle.
+
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label8" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 146.0
+margin_top = 1780.0
+margin_right = 1956.0
+margin_bottom = 3277.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = SubResource( 5 )
+text = "
+There’s a good reason both of these effects turn out to be implemented similarly: It helps us save space too!
+
+First, since both actions use the same function, we’re able to alias circfill() with c(). This saves 7 characters per use!
+
+Second, we’re able to draw both shapes in the same for loop! This is important because creating loops has a lot of character-count overhead.
+
+In fact, if we unwrap the code for this tweetcart, we can see that basically everything takes place in the nested for loop. It’s helpful to get as much mileage as we can from our code!
+
+One more cool trick we do is change the color, size, and separation between every other tentacle, to achieve a nice ‘perspective’ effect.
+
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label9" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 140.0
+margin_top = 2570.0
+margin_right = 2091.0
+margin_bottom = 2717.0
+rect_scale = Vector2( 0.365845, 0.342624 )
+custom_fonts/font = SubResource( 5 )
+text = "There’s a lot more ground to cover, so here’s some rapid-fire tips:
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shapes_003" type="Sprite" parent="Node2D/Label9"]
+position = Vector2( 464.678, 554.544 )
+scale = Vector2( 2.35074, 2.35074 )
+texture = ExtResource( 646 )
+
+[node name="NinePatchRect3" parent="Node2D" instance=ExtResource( 4 )]
+self_modulate = Color( 0.113725, 0.168627, 0.321569, 1 )
+margin_left = 140.0
+margin_top = 750.0
+margin_right = 850.0
+margin_bottom = 880.0
+
+[node name="Label4" type="Label" parent="Node2D/NinePatchRect3"]
+self_modulate = Color( 0.72549, 0.756863, 0.823529, 1 )
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 1788.0
+margin_bottom = 390.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = SubResource( 7 )
+text = "c=circfill::_::srand()cls(12)for i=1,8do
+m=i%2for j=0,9do
+o=2*cos(t()*j/7)c(32+7^i+o,80+8*j,7,2)c(24+8*i+o,80+(3+m)*j,3-j/4+2*m,1+12*m)c(60-4*cos(i/16)*j,9+7*j,7,13)c(42+24*(j%2),64,2+3*m,7*m)circ(rnd(128),(rnd(99)-4*i*t())%128,rnd(3),7)end
+end
+?\"ウニとインク\",36,9,0
+flip()goto _"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect4" parent="Node2D" instance=ExtResource( 4 )]
+self_modulate = Color( 0.113725, 0.168627, 0.321569, 1 )
+margin_left = 140.0
+margin_top = 2290.0
+margin_right = 640.0
+margin_bottom = 2558.0
+
+[node name="Label4" type="Label" parent="Node2D/NinePatchRect4"]
+self_modulate = Color( 0.72549, 0.756863, 0.823529, 1 )
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 1255.0
+margin_bottom = 710.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = SubResource( 7 )
+text = "c=circfill
+::_::
+srand()
+cls(12)
+for i=1,8 do
+m=i%2
+for j=0,9 do
+o=2*cos(t()*j/7)
+c(32+7^i+o,80+8*j,7,2)
+c(24+8*i+o,80+(3+m)*j,3-j/4+2*m,1+12*m)
+c(60-4*cos(i/16)*j,9+7*j,7,13)
+c(42+24*(j%2),64,2+3*m,7*m)
+circ(rnd(128),(rnd(99)-4*i*t())%128,rnd(3),7)
+end
+end
+print(\"ウニとインク\",36,9,0)
+flip()
+goto _
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 0, -2050 )
+scale = Vector2( 0.515607, 2.10379 )
+
+[node name="slider" parent="." instance=ExtResource( 6 )]
+position = Vector2( 910, 270 )
+[connection signal="dragged" from="slider" to="." method="_on_slider_dragged"]
+
+[editable path="Node2D"]

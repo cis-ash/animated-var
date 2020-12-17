@@ -390,7 +390,7 @@
 size = 32
 font_data = ExtResource( 3 )
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=6]
 animations = [ {
 "frames": [ ExtResource( 19 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 24 ), ExtResource( 29 ), ExtResource( 20 ), ExtResource( 25 ), ExtResource( 18 ), ExtResource( 21 ), ExtResource( 27 ), ExtResource( 31 ), ExtResource( 22 ), ExtResource( 17 ), ExtResource( 32 ), ExtResource( 30 ), ExtResource( 23 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 12 ) ],
 "loop": true,
@@ -398,7 +398,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 8 ), ExtResource( 43 ), ExtResource( 60 ), ExtResource( 58 ), ExtResource( 45 ), ExtResource( 81 ), ExtResource( 88 ), ExtResource( 78 ), ExtResource( 75 ), ExtResource( 34 ), ExtResource( 56 ), ExtResource( 40 ), ExtResource( 86 ), ExtResource( 41 ), ExtResource( 59 ), ExtResource( 87 ), ExtResource( 89 ), ExtResource( 73 ), ExtResource( 61 ), ExtResource( 90 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 91 ), ExtResource( 54 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 64 ), ExtResource( 74 ), ExtResource( 70 ), ExtResource( 52 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 92 ), ExtResource( 42 ), ExtResource( 66 ), ExtResource( 33 ), ExtResource( 79 ), ExtResource( 57 ), ExtResource( 82 ), ExtResource( 80 ), ExtResource( 85 ), ExtResource( 62 ), ExtResource( 46 ), ExtResource( 65 ), ExtResource( 63 ), ExtResource( 47 ), ExtResource( 83 ), ExtResource( 53 ), ExtResource( 67 ), ExtResource( 84 ), ExtResource( 93 ), ExtResource( 39 ), ExtResource( 94 ), ExtResource( 44 ), ExtResource( 95 ), ExtResource( 48 ), ExtResource( 37 ), ExtResource( 96 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 55 ), ExtResource( 49 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 116 ), ExtResource( 133 ), ExtResource( 141 ), ExtResource( 121 ), ExtResource( 145 ), ExtResource( 149 ), ExtResource( 163 ), ExtResource( 148 ), ExtResource( 113 ), ExtResource( 164 ), ExtResource( 126 ), ExtResource( 140 ), ExtResource( 143 ), ExtResource( 156 ), ExtResource( 103 ), ExtResource( 142 ), ExtResource( 136 ), ExtResource( 128 ), ExtResource( 157 ), ExtResource( 130 ), ExtResource( 134 ), ExtResource( 120 ), ExtResource( 150 ), ExtResource( 122 ), ExtResource( 135 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 151 ), ExtResource( 105 ), ExtResource( 160 ), ExtResource( 127 ), ExtResource( 152 ), ExtResource( 125 ), ExtResource( 117 ), ExtResource( 158 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 118 ), ExtResource( 139 ), ExtResource( 155 ), ExtResource( 166 ), ExtResource( 137 ), ExtResource( 159 ), ExtResource( 110 ), ExtResource( 161 ), ExtResource( 111 ), ExtResource( 144 ), ExtResource( 162 ), ExtResource( 165 ), ExtResource( 104 ), ExtResource( 129 ), ExtResource( 108 ), ExtResource( 114 ), ExtResource( 112 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 131 ), ExtResource( 119 ), ExtResource( 109 ), ExtResource( 115 ), ExtResource( 123 ), ExtResource( 132 ), ExtResource( 138 ), ExtResource( 124 ), ExtResource( 171 ), ExtResource( 172 ), ExtResource( 167 ), ExtResource( 170 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 248 ), ExtResource( 220 ), ExtResource( 208 ), ExtResource( 256 ), ExtResource( 226 ), ExtResource( 212 ), ExtResource( 258 ), ExtResource( 246 ), ExtResource( 255 ), ExtResource( 237 ), ExtResource( 250 ), ExtResource( 227 ), ExtResource( 209 ), ExtResource( 218 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 267 ), ExtResource( 232 ), ExtResource( 259 ), ExtResource( 213 ), ExtResource( 257 ), ExtResource( 264 ), ExtResource( 260 ), ExtResource( 225 ), ExtResource( 228 ), ExtResource( 251 ), ExtResource( 230 ), ExtResource( 221 ), ExtResource( 238 ), ExtResource( 222 ), ExtResource( 242 ), ExtResource( 247 ), ExtResource( 214 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 229 ), ExtResource( 215 ), ExtResource( 231 ), ExtResource( 270 ), ExtResource( 216 ), ExtResource( 266 ), ExtResource( 233 ), ExtResource( 217 ), ExtResource( 219 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 240 ), ExtResource( 268 ), ExtResource( 269 ), ExtResource( 236 ), ExtResource( 239 ), ExtResource( 241 ), ExtResource( 261 ), ExtResource( 243 ), ExtResource( 262 ), ExtResource( 244 ), ExtResource( 263 ), ExtResource( 245 ), ExtResource( 265 ), ExtResource( 249 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 271 ), ExtResource( 275 ), ExtResource( 278 ), ExtResource( 277 ), ExtResource( 282 ), ExtResource( 273 ), ExtResource( 284 ), ExtResource( 283 ), ExtResource( 272 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 274 ), ExtResource( 276 ), ExtResource( 177 ), ExtResource( 179 ), ExtResource( 196 ), ExtResource( 195 ), ExtResource( 190 ), ExtResource( 206 ), ExtResource( 180 ), ExtResource( 187 ), ExtResource( 175 ), ExtResource( 197 ), ExtResource( 174 ), ExtResource( 191 ), ExtResource( 181 ), ExtResource( 178 ), ExtResource( 205 ), ExtResource( 186 ), ExtResource( 176 ), ExtResource( 207 ), ExtResource( 173 ), ExtResource( 198 ), ExtResource( 202 ), ExtResource( 192 ), ExtResource( 183 ), ExtResource( 199 ), ExtResource( 188 ), ExtResource( 184 ), ExtResource( 193 ), ExtResource( 189 ), ExtResource( 204 ), ExtResource( 185 ), ExtResource( 200 ), ExtResource( 194 ), ExtResource( 203 ), ExtResource( 201 ), ExtResource( 182 ) ],
 "loop": true,
@@ -406,7 +406,7 @@ animations = [ {
 "speed": 30.0
 } ]
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 292 ), ExtResource( 291 ), ExtResource( 287 ), ExtResource( 309 ), ExtResource( 293 ), ExtResource( 288 ), ExtResource( 298 ), ExtResource( 294 ), ExtResource( 296 ), ExtResource( 289 ), ExtResource( 285 ), ExtResource( 304 ), ExtResource( 299 ), ExtResource( 302 ), ExtResource( 311 ), ExtResource( 312 ), ExtResource( 295 ), ExtResource( 307 ), ExtResource( 297 ), ExtResource( 290 ), ExtResource( 308 ), ExtResource( 286 ), ExtResource( 300 ), ExtResource( 301 ), ExtResource( 303 ), ExtResource( 310 ), ExtResource( 313 ), ExtResource( 305 ), ExtResource( 306 ), ExtResource( 351 ), ExtResource( 354 ), ExtResource( 349 ), ExtResource( 350 ), ExtResource( 334 ), ExtResource( 374 ), ExtResource( 375 ), ExtResource( 335 ), ExtResource( 342 ), ExtResource( 337 ), ExtResource( 371 ), ExtResource( 356 ), ExtResource( 343 ), ExtResource( 347 ), ExtResource( 320 ), ExtResource( 360 ), ExtResource( 370 ), ExtResource( 333 ), ExtResource( 338 ), ExtResource( 329 ), ExtResource( 336 ), ExtResource( 319 ), ExtResource( 344 ), ExtResource( 361 ), ExtResource( 367 ), ExtResource( 330 ), ExtResource( 341 ), ExtResource( 362 ), ExtResource( 363 ), ExtResource( 355 ), ExtResource( 318 ), ExtResource( 377 ), ExtResource( 365 ), ExtResource( 376 ), ExtResource( 314 ), ExtResource( 345 ), ExtResource( 364 ), ExtResource( 339 ), ExtResource( 321 ), ExtResource( 327 ), ExtResource( 346 ), ExtResource( 322 ), ExtResource( 323 ), ExtResource( 366 ), ExtResource( 331 ), ExtResource( 357 ), ExtResource( 340 ), ExtResource( 352 ), ExtResource( 324 ), ExtResource( 325 ), ExtResource( 326 ), ExtResource( 348 ), ExtResource( 332 ), ExtResource( 368 ), ExtResource( 353 ), ExtResource( 328 ), ExtResource( 358 ), ExtResource( 372 ), ExtResource( 359 ), ExtResource( 316 ), ExtResource( 315 ), ExtResource( 369 ), ExtResource( 373 ), ExtResource( 317 ), ExtResource( 383 ), ExtResource( 382 ), ExtResource( 378 ), ExtResource( 379 ), ExtResource( 380 ), ExtResource( 381 ), ExtResource( 385 ), ExtResource( 384 ) ],
 "loop": true,
@@ -414,7 +414,7 @@ animations = [ {
 "speed": 20.0
 } ]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=5]
 size = 48
 use_mipmaps = true
 font_data = ExtResource( 5 )
@@ -425,35 +425,38 @@ script = ExtResource( 7 )
 [node name="Node2D" parent="." instance=ExtResource( 1 )]
 
 [node name="NinePatchRect2" parent="Node2D" index="0"]
-margin_bottom = 1670.0
+margin_bottom = 2180.0
 
 [node name="NinePatchRect" parent="Node2D" index="1"]
-margin_bottom = 1650.0
+margin_left = 130.0
+margin_top = 10.0
+margin_right = 874.0
+margin_bottom = 2160.0
 
 [node name="Untitled3" type="Sprite" parent="Node2D"]
 self_modulate = Color( 0, 1, 0.976471, 1 )
-position = Vector2( 498, 70 )
+position = Vector2( 498, 56 )
 scale = Vector2( 0.72, 0.736842 )
 texture = ExtResource( 2 )
 
 [node name="Untitled2" type="Sprite" parent="Node2D"]
 self_modulate = Color( 1, 0, 1, 1 )
-position = Vector2( 502, 70 )
+position = Vector2( 502, 56 )
 scale = Vector2( 0.72, 0.736842 )
 texture = ExtResource( 2 )
 
 [node name="Untitled" type="Sprite" parent="Node2D"]
 self_modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 500, 70 )
+position = Vector2( 500, 56 )
 scale = Vector2( 0.72, 0.736842 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="Node2D"]
 self_modulate = Color( 0, 0, 0, 1 )
 margin_left = 150.0
-margin_top = 90.0
+margin_top = 70.0
 margin_right = 470.0
-margin_bottom = 138.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 1 )
 text = "of superpunk 247"
 __meta__ = {
@@ -466,24 +469,24 @@ scale = Vector2( 0.794554, 0.792592 )
 texture = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Node2D"]
-position = Vector2( 220, 1550 )
-scale = Vector2( 0.484599, 0.478461 )
-frames = SubResource( 3 )
-frame = 19
+position = Vector2( 293, 1451.52 )
+scale = Vector2( 0.913043, 0.831589 )
+frames = SubResource( 6 )
+frame = 5
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Node2D"]
-position = Vector2( 220, 1360 )
-scale = Vector2( 1.08347, 1.18055 )
-frames = SubResource( 4 )
-frame = 223
+position = Vector2( 292.998, 1156.99 )
+scale = Vector2( 2.0417, 2.12508 )
+frames = SubResource( 3 )
+frame = 156
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="Node2D"]
-position = Vector2( 219.005, 1125 )
-scale = Vector2( 0.477372, 0.470348 )
-frames = SubResource( 5 )
-frame = 13
+position = Vector2( 650, 1290 )
+scale = Vector2( 1.19185, 1.17431 )
+frames = SubResource( 4 )
+frame = 69
 playing = true
 
 [node name="Label2" type="Label" parent="Node2D"]
@@ -491,9 +494,9 @@ self_modulate = Color( 0, 0, 0, 1 )
 margin_left = 310.0
 margin_top = 138.0
 margin_right = 1703.0
-margin_bottom = 4260.0
+margin_bottom = 2385.0
 rect_scale = Vector2( 0.393682, 0.368694 )
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 5 )
 text = "This writeup aims to explain the inner workings of the artstyle used in superpunk247 and recent visual experiments by ash k.
 
 
@@ -506,7 +509,21 @@ After this we apply the shader. For each pixel on screen it tries to find the ne
 
 This step is what makes the image have colors that are always coordinated with each other or in other cases makes them all exhibit the same general qualities.
 
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
+[node name="Label3" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 146.0
+margin_top = 1560.0
+margin_right = 1934.0
+margin_bottom = 3807.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = SubResource( 5 )
+text = "
 The majority of the sprites used in games that use this artstyle are cropped stock images with an outline added to them for clarity. Many of them have their colors blurred to avoid noisy pixels when the low res filter is applied. 
 
 Surfaces that require some sort of a texture are usually made out of heavily edited real world phootos of textured suurfaces or objects. Flat color areas are generally avoided as seeing the play of color on a textured surface is far more appealing, and also because the additive perlin overlay illusion breaks down when viewed on flat color.
@@ -520,7 +537,7 @@ __meta__ = {
 }
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 0, -690 )
+position = Vector2( 0, -1190 )
 scale = Vector2( 0.515607, 2.10379 )
 
 [node name="slider" parent="." instance=ExtResource( 6 )]

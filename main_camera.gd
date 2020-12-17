@@ -3,7 +3,7 @@ var page = 0
 var pos = 500
 var speed = 0
 var min_page = 0
-var max_page = 1
+var max_page = 2
 
 
 # Declare member variables here. Examples:
