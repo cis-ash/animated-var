@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://characters/shadows/shadow_3d.gd" type="Script" id=1]
+
+[node name="shadow_3d" type="Node2D" groups=[
+"shadow",
+]]
+show_behind_parent = true
+script = ExtResource( 1 )

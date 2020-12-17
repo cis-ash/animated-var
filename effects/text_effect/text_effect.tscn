@@ -1,0 +1,152 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://effects/text_effect/text_effect.gd" type="Script" id=1]
+[ext_resource path="res://resources/shapes/white square.png" type="Texture" id=2]
+[ext_resource path="res://resources/fonts/mini-wakuwaku.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://effects/typing sounds/pop_4.wav" type="AudioStream" id=4]
+[ext_resource path="res://effects/typing sounds/pop_5.wav" type="AudioStream" id=5]
+[ext_resource path="res://effects/typing sounds/pop_6.wav" type="AudioStream" id=6]
+[ext_resource path="res://effects/typing sounds/pop_8.wav" type="AudioStream" id=7]
+[ext_resource path="res://effects/typing sounds/pop_7.wav" type="AudioStream" id=8]
+[ext_resource path="res://effects/typing sounds/pop_1.wav" type="AudioStream" id=9]
+[ext_resource path="res://effects/typing sounds/pop_3.wav" type="AudioStream" id=10]
+[ext_resource path="res://effects/typing sounds/pop_0.wav" type="AudioStream" id=11]
+[ext_resource path="res://effects/typing sounds/pop_2.wav" type="AudioStream" id=12]
+[ext_resource path="res://effects/explosion/kaboom.tscn" type="PackedScene" id=13]
+[ext_resource path="res://effects/typing sounds/unpop_3.wav" type="AudioStream" id=14]
+[ext_resource path="res://effects/typing sounds/unpop_7.wav" type="AudioStream" id=15]
+[ext_resource path="res://effects/typing sounds/unpop_8.wav" type="AudioStream" id=16]
+[ext_resource path="res://effects/typing sounds/unpop_0.wav" type="AudioStream" id=17]
+[ext_resource path="res://effects/typing sounds/unpop_1.wav" type="AudioStream" id=18]
+[ext_resource path="res://effects/typing sounds/unpop_2.wav" type="AudioStream" id=19]
+[ext_resource path="res://effects/typing sounds/unpop_4.wav" type="AudioStream" id=20]
+[ext_resource path="res://effects/typing sounds/unpop_6.wav" type="AudioStream" id=21]
+[ext_resource path="res://effects/typing sounds/unpop_5.wav" type="AudioStream" id=22]
+[ext_resource path="res://resources/fonts/editor_dynamic_font.tres" type="DynamicFont" id=23]
+
+[sub_resource type="DynamicFont" id=1]
+size = 384
+font_data = ExtResource( 3 )
+
+[node name="text_effect" type="Node2D"]
+script = ExtResource( 1 )
+font = SubResource( 1 )
+lifetime = 0.5
+explosion = ExtResource( 13 )
+
+[node name="red square" type="TextureRect" parent="."]
+self_modulate = Color( 0.733333, 0.580392, 0.403922, 1 )
+margin_left = -108.0
+margin_top = -138.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mover" type="Node2D" parent="."]
+z_index = 128
+
+[node name="Label" type="Label" parent="mover"]
+margin_right = 108.0
+margin_bottom = 387.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_pivot_offset = Vector2( 124.533, 324.606 )
+custom_fonts/font = ExtResource( 23 )
+text = "."
+align = 2
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="mover"]
+margin_left = -108.0
+margin_top = -387.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_pivot_offset = Vector2( 124.533, 324.606 )
+custom_fonts/font = ExtResource( 23 )
+text = "."
+align = 2
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pop0" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+bus = "typing"
+
+[node name="pop1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+bus = "typing"
+
+[node name="pop2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+bus = "typing"
+
+[node name="pop3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+bus = "typing"
+
+[node name="pop4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+bus = "typing"
+
+[node name="pop5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "typing"
+
+[node name="pop6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+bus = "typing"
+
+[node name="pop7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+bus = "typing"
+
+[node name="pop8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+bus = "typing"
+
+[node name="unpop0" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+bus = "typing"
+
+[node name="unpop1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+bus = "typing"
+
+[node name="unpop2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 19 )
+bus = "typing"
+
+[node name="unpop3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+bus = "typing"
+
+[node name="unpop4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 20 )
+bus = "typing"
+
+[node name="unpop5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
+bus = "typing"
+
+[node name="unpop6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
+bus = "typing"
+
+[node name="unpop7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+bus = "typing"
+
+[node name="unpop8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+bus = "typing"

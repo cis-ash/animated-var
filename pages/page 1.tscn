@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/fonts/editor_dynamic_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://pages/page.tscn" type="PackedScene" id=2]
+
+[node name="page 1" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+
+[node name="Label" type="Label" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 144.0
+margin_top = 24.0
+margin_right = 856.0
+margin_bottom = 105.0
+custom_fonts/font = ExtResource( 1 )
+text = "this is the cover page, things will be here eventually"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

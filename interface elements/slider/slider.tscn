@@ -1,0 +1,124 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://resources/shapes/white circle.png" type="Texture" id=1]
+[ext_resource path="res://resources/shapes/white square.png" type="Texture" id=2]
+[ext_resource path="res://interface elements/slider/slider.gd" type="Script" id=3]
+[ext_resource path="res://interface elements/shared_sounds/tick.wav" type="AudioStream" id=4]
+[ext_resource path="res://interface elements/shared_sounds/up.wav" type="AudioStream" id=5]
+[ext_resource path="res://interface elements/shared_sounds/down.wav" type="AudioStream" id=6]
+
+[node name="slider" type="Node2D"]
+position = Vector2( 329.329, 121.734 )
+script = ExtResource( 3 )
+
+[node name="groove" type="NinePatchRect" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = -7.0
+margin_top = -87.0
+margin_right = 505.0
+margin_bottom = 32436.0
+rect_scale = Vector2( 0.02, 0.02 )
+texture = ExtResource( 1 )
+patch_margin_left = 256
+patch_margin_top = 256
+patch_margin_right = 256
+patch_margin_bottom = 256
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slider" type="Node2D" parent="."]
+position = Vector2( 2.48535, 0.677795 )
+
+[node name="sliderbase" type="NinePatchRect" parent="slider"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = -21.0796
+margin_top = -25.4868
+margin_right = 706.92
+margin_bottom = 1134.52
+rect_scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 1 )
+patch_margin_left = 256
+patch_margin_top = 256
+patch_margin_right = 256
+patch_margin_bottom = 256
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slidertop" type="NinePatchRect" parent="slider"]
+self_modulate = Color( 1, 0, 0.584314, 1 )
+margin_left = -19.0796
+margin_top = -29.4868
+margin_right = 708.92
+margin_bottom = 1107.52
+rect_scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 1 )
+patch_margin_left = 256
+patch_margin_top = 256
+patch_margin_right = 256
+patch_margin_bottom = 256
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rib4" type="Sprite" parent="slider"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -0.741089, -10.3167 )
+scale = Vector2( 0.17154, 0.0505719 )
+texture = ExtResource( 2 )
+
+[node name="rib3" type="Sprite" parent="slider"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -0.409058, 8.28467 )
+scale = Vector2( 0.17154, 0.0505719 )
+texture = ExtResource( 2 )
+
+[node name="rib1" type="Sprite" parent="slider"]
+position = Vector2( -1.4054, -8.98779 )
+scale = Vector2( 0.17154, 0.0505719 )
+texture = ExtResource( 2 )
+
+[node name="rib2" type="Sprite" parent="slider"]
+position = Vector2( -1.07336, 9.61353 )
+scale = Vector2( 0.17154, 0.0505719 )
+texture = ExtResource( 2 )
+
+[node name="ClickDetector" type="Control" parent="slider"]
+margin_left = -20.0
+margin_top = -29.0
+margin_right = 18.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="slider/ClickDetector"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0.027451, 0.129412, 0.964706, 0.352941 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="top" type="Position2D" parent="."]
+position = Vector2( -1.897, -42.6996 )
+
+[node name="bottom" type="Position2D" parent="."]
+position = Vector2( -1.725, 530 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -13.126
+
+[node name="grab" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -13.126
+
+[node name="release" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -13.126
+[connection signal="mouse_entered" from="slider/ClickDetector" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="slider/ClickDetector" to="." method="_on_Area2D_mouse_exited"]

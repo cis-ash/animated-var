@@ -1,0 +1,41 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://effects/woodpecker sounds/hit_1.wav" type="AudioStream" id=1]
+[ext_resource path="res://effects/woodpecker sounds/hit_4.wav" type="AudioStream" id=2]
+[ext_resource path="res://effects/woodpecker sounds/hit_3.wav" type="AudioStream" id=3]
+[ext_resource path="res://effects/woodpecker sounds/hit_2.wav" type="AudioStream" id=4]
+[ext_resource path="res://effects/woodpecker sounds/hit_0.wav" type="AudioStream" id=5]
+[ext_resource path="res://effects/woodpecker sounds/hit_5.wav" type="AudioStream" id=6]
+[ext_resource path="res://effects/woodpecker sounds/hit_6.wav" type="AudioStream" id=7]
+[ext_resource path="res://effects/woodpecker sounds/wood_hit.gd" type="Script" id=8]
+
+[node name="wood_hit" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="hit_0" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+bus = "effect"
+
+[node name="hit_1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+bus = "effect"
+
+[node name="hit_2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+bus = "effect"
+
+[node name="hit_3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+bus = "effect"
+
+[node name="hit_4" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 2 )
+bus = "effect"
+
+[node name="hit_5" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+bus = "effect"
+
+[node name="hit_6" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+bus = "effect"

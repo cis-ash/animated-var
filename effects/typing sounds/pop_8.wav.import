@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pop_8.wav-573d60e60bc92046a26523e54662d474.sample"
+
+[deps]
+
+source_file="res://effects/typing sounds/pop_8.wav"
+dest_files=[ "res://.import/pop_8.wav-573d60e60bc92046a26523e54662d474.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

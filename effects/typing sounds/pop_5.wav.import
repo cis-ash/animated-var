@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pop_5.wav-2adc71de27feeb85e8c217f1a87976e3.sample"
+
+[deps]
+
+source_file="res://effects/typing sounds/pop_5.wav"
+dest_files=[ "res://.import/pop_5.wav-2adc71de27feeb85e8c217f1a87976e3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

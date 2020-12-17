@@ -1,0 +1,220 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://characters/mockups/mockup.png" type="Texture" id=1]
+[ext_resource path="res://resources/fonts/mini-wakuwaku.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://resources/textures/intro_seq/ashywashy.wav" type="AudioStream" id=3]
+[ext_resource path="res://resources/textures/intro_seq/intro_sequence.gd" type="Script" id=4]
+
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 2 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1023.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name1" type="Label" parent="Control"]
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -510.86
+margin_top = 488.735
+margin_right = 1529.14
+margin_bottom = 711.735
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 1 )
+text = "Very long name and  last name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Control/Name1"]
+self_modulate = Color( 1, 0.501961, 0, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -1031.94
+margin_top = -11.4718
+margin_right = 1008.06
+margin_bottom = 211.528
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 1.01, 1.01 )
+custom_fonts/font = SubResource( 1 )
+text = "Very long name and  last name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name2" type="Label" parent="Control"]
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -510.86
+margin_top = 488.735
+margin_right = 1529.14
+margin_bottom = 711.735
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 1 )
+text = "Very long name and  last name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Control/Name2"]
+self_modulate = Color( 0.501961, 1, 0, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -1031.94
+margin_top = -11.4718
+margin_right = 1008.06
+margin_bottom = 211.528
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 1.01, 1.01 )
+custom_fonts/font = SubResource( 1 )
+text = "Very long name and  last name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name3" type="Label" parent="Control"]
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -510.86
+margin_top = 488.735
+margin_right = 1529.14
+margin_bottom = 711.735
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 1 )
+text = "Very long name and  last name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Control/Name3"]
+self_modulate = Color( 0.25098, 1, 0.627451, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -1031.94
+margin_top = -11.4718
+margin_right = 1008.06
+margin_bottom = 211.528
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 1.01, 1.01 )
+custom_fonts/font = SubResource( 1 )
+text = "Very long name and  last name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name4" type="Label" parent="Control"]
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -510.86
+margin_top = 488.735
+margin_right = 1529.14
+margin_bottom = 711.735
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 1 )
+text = "Very long name and  last name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Control/Name4"]
+self_modulate = Color( 0.345098, 0.67451, 1, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -1031.94
+margin_top = -11.4718
+margin_right = 1008.06
+margin_bottom = 211.528
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 1.01, 1.01 )
+custom_fonts/font = SubResource( 1 )
+text = "Very long name and  last name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Control"]
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -518.5
+margin_top = -5.90918
+margin_right = 510.5
+margin_bottom = 174.091
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = SubResource( 1 )
+text = "Textreme 2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title2" type="Label" parent="Control/Title"]
+self_modulate = Color( 1, 0, 0.501961, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -525.183
+margin_top = -12.0746
+margin_right = 503.817
+margin_bottom = 167.925
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 1.02, 1.02 )
+custom_fonts/font = SubResource( 1 )
+text = "Textreme 2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mockup" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, 0.047 )
+scale = Vector2( 0.552933, 0.552933 )
+texture = ExtResource( 1 )
+offset = Vector2( 938.614, 520.996 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )

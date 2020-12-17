@@ -1,0 +1,157 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://characters/woodpecker/woodpecker_char.gd" type="Script" id=1]
+[ext_resource path="res://resources/shapes/wingbody.png" type="Texture" id=2]
+[ext_resource path="res://resources/shapes/white circle.png" type="Texture" id=3]
+[ext_resource path="res://resources/shapes/white square.png" type="Texture" id=4]
+[ext_resource path="res://characters/shadows/shadow_3d.tscn" type="PackedScene" id=6]
+[ext_resource path="res://characters/character_hider/character_hider.tscn" type="PackedScene" id=7]
+[ext_resource path="res://effects/woodpecker sounds/wood_hit.tscn" type="PackedScene" id=8]
+
+[node name="woodpecker_char" type="Node2D"]
+position = Vector2( -215.335, -63.4942 )
+script = ExtResource( 1 )
+peck_sound = ExtResource( 8 )
+
+[node name="leg" type="Node2D" parent="."]
+position = Vector2( 449.315, 395 )
+
+[node name="leg sprite" type="Sprite" parent="leg"]
+self_modulate = Color( 0.839216, 0.466667, 0, 1 )
+position = Vector2( -30.1222, 18.3662 )
+rotation = 2.56344
+scale = Vector2( 0.894703, 0.147994 )
+texture = ExtResource( 4 )
+offset = Vector2( -56.3665, -2.62124 )
+
+[node name="shadow_3d" parent="leg/leg sprite" instance=ExtResource( 6 )]
+position = Vector2( -56, -2 )
+
+[node name="neck" type="Node2D" parent="leg"]
+position = Vector2( 87.0466, -60.7418 )
+rotation = -0.731907
+
+[node name="white square" type="Sprite" parent="leg/neck"]
+self_modulate = Color( 0.439216, 0.541176, 0.580392, 1 )
+position = Vector2( 31.7922, -63.4287 )
+rotation = 0.939086
+scale = Vector2( 0.409757, 1 )
+z_index = -1
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="leg/neck/white square" instance=ExtResource( 6 )]
+
+[node name="head" type="Node2D" parent="leg/neck"]
+position = Vector2( 76.2976, -110.825 )
+rotation = 0.127039
+
+[node name="white circle" type="Sprite" parent="leg/neck/head"]
+self_modulate = Color( 0.439216, 0.541176, 0.580392, 1 )
+position = Vector2( -1.59717, -0.73053 )
+scale = Vector2( 0.173752, 0.173752 )
+texture = ExtResource( 3 )
+
+[node name="shadow_3d" parent="leg/neck/head/white circle" instance=ExtResource( 6 )]
+z_index = -2
+
+[node name="eye" type="Node2D" parent="leg/neck/head"]
+
+[node name="white circle" type="Sprite" parent="leg/neck/head/eye"]
+position = Vector2( -2.08679, -3.32593 )
+scale = Vector2( 0.124786, 0.124786 )
+texture = ExtResource( 3 )
+
+[node name="pupil" type="Node2D" parent="leg/neck/head/eye"]
+position = Vector2( -2.1198, -1.63303 )
+
+[node name="white circle" type="Sprite" parent="leg/neck/head/eye/pupil"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -0.203979, 0.312012 )
+rotation = 4.66459e-10
+scale = Vector2( 0.088563, 0.088563 )
+texture = ExtResource( 3 )
+
+[node name="beak" type="Node2D" parent="leg/neck/head"]
+rotation = -0.00400232
+
+[node name="wingbody" type="Sprite" parent="leg/neck/head/beak"]
+self_modulate = Color( 0.839216, 0.466667, 0, 1 )
+position = Vector2( -29.6204, -38.1705 )
+rotation = -1.98225
+scale = Vector2( 0.1792, 0.1792 )
+z_index = -1
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="leg/neck/head/beak/wingbody" instance=ExtResource( 6 )]
+
+[node name="feathers" type="Node2D" parent="leg/neck/head"]
+
+[node name="feather2" type="Sprite" parent="leg/neck/head/feathers"]
+self_modulate = Color( 0.854902, 0, 0.235294, 1 )
+position = Vector2( 33.6262, 14.2067 )
+rotation = 1.02786
+scale = Vector2( 0.220249, 0.220249 )
+z_index = -1
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="leg/neck/head/feathers/feather2" instance=ExtResource( 6 )]
+
+[node name="feather3" type="Sprite" parent="leg/neck/head/feathers"]
+self_modulate = Color( 0.854902, 0, 0.235294, 1 )
+position = Vector2( 11.2878, 17.2483 )
+rotation = 1.02786
+scale = Vector2( 0.220249, 0.220249 )
+z_index = -1
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="leg/neck/head/feathers/feather3" instance=ExtResource( 6 )]
+
+[node name="body" type="Node2D" parent="leg"]
+position = Vector2( 87.0316, -60.7337 )
+rotation = -0.0357713
+
+[node name="body sprite" type="Sprite" parent="leg/body"]
+self_modulate = Color( 0.439216, 0.541176, 0.580392, 1 )
+position = Vector2( -7.93704, -4.48071 )
+rotation = 1.55646
+scale = Vector2( 0.639229, 0.639229 )
+texture = ExtResource( 2 )
+offset = Vector2( 94.1766, -13.7612 )
+
+[node name="shadow_3d" parent="leg/body/body sprite" instance=ExtResource( 6 )]
+position = Vector2( 94, -13 )
+
+[node name="wing" type="Node2D" parent="leg/body"]
+position = Vector2( 26.2036, 3.956 )
+rotation = 0.039762
+
+[node name="wing sprite" type="Sprite" parent="leg/body/wing"]
+self_modulate = Color( 0.180392, 0.227451, 0.247059, 1 )
+position = Vector2( -0.530701, -2.32202 )
+rotation = 1.50778
+scale = Vector2( 0.456166, 0.456166 )
+texture = ExtResource( 2 )
+offset = Vector2( 89.611, -0.13282 )
+
+[node name="shadow_3d" parent="leg/body/wing/wing sprite" instance=ExtResource( 6 )]
+position = Vector2( 89, 0 )
+
+[node name="icon" type="Sprite" parent="."]
+visible = false
+self_modulate = Color( 0.607843, 0.466667, 0.360784, 1 )
+position = Vector2( -1464.16, 180.7 )
+scale = Vector2( 59.7338, 56.0577 )
+
+[node name="character_hider" parent="." instance=ExtResource( 7 )]
+margin_left = 408.0
+margin_top = 135.0
+margin_right = 716.0
+margin_bottom = 508.0
+
+[node name="on" parent="character_hider" index="1"]
+bus = "Master"
+
+[node name="off" parent="character_hider" index="2"]
+bus = "Master"
+
+[editable path="character_hider"]

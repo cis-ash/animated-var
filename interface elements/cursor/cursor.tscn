@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface elements/cursor/cursor.gd" type="Script" id=1]
+[ext_resource path="res://interface elements/cursor/cursor_smoothed_32.png" type="Texture" id=2]
+[ext_resource path="res://interface elements/cursor/Text_cursor.png" type="Texture" id=3]
+
+[node name="cursor" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="speed_squisher" type="Node2D" parent="."]
+
+[node name="sprite" type="Sprite" parent="speed_squisher"]
+scale = Vector2( 0.7, 0.7 )
+z_index = 10
+texture = ExtResource( 2 )
+
+[node name="Text_cursor" type="Sprite" parent="speed_squisher"]
+visible = false
+texture = ExtResource( 3 )

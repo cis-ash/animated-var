@@ -1,0 +1,262 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://characters/boomchick/boomchick.gd" type="Script" id=1]
+[ext_resource path="res://resources/shapes/white circle.png" type="Texture" id=2]
+[ext_resource path="res://resources/shapes/wingbody.png" type="Texture" id=3]
+[ext_resource path="res://resources/shapes/white square.png" type="Texture" id=4]
+[ext_resource path="res://resources/shapes/white half circle.png" type="Texture" id=5]
+[ext_resource path="res://characters/shadows/shadow_3d.tscn" type="PackedScene" id=25]
+[ext_resource path="res://characters/character_hider/character_hider.tscn" type="PackedScene" id=26]
+
+[node name="boomchick" type="Node2D"]
+position = Vector2( 477.894, 557.894 )
+script = ExtResource( 1 )
+
+[node name="chick" type="Node2D" parent="."]
+position = Vector2( 0.836182, 15.0523 )
+
+[node name="leg_left" type="Node2D" parent="chick"]
+position = Vector2( -29.8161, -202.881 )
+
+[node name="white square" type="Sprite" parent="chick/leg_left"]
+self_modulate = Color( 0.839216, 0.466667, 0, 1 )
+position = Vector2( -8.40119, 25.8665 )
+rotation = 0.263736
+scale = Vector2( 0.139237, 0.513178 )
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="chick/leg_left/white square" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="white square2" type="Sprite" parent="chick/leg_left"]
+self_modulate = Color( 0.839216, 0.466667, 0, 1 )
+position = Vector2( -23.7556, 52.6398 )
+rotation = -1.57079
+scale = Vector2( 0.119639, 0.246836 )
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="chick/leg_left/white square2" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="leg_right" type="Node2D" parent="chick"]
+position = Vector2( 24.6752, -201.172 )
+
+[node name="white square2" type="Sprite" parent="chick/leg_right"]
+self_modulate = Color( 0.839216, 0.466667, 0, 1 )
+position = Vector2( 10.0587, 27.0308 )
+rotation = -0.329679
+scale = Vector2( 0.139237, 0.533594 )
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="chick/leg_right/white square2" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="white square3" type="Sprite" parent="chick/leg_right"]
+self_modulate = Color( 0.839216, 0.466667, 0, 1 )
+position = Vector2( 28.6206, 54.6379 )
+rotation = -1.57079
+scale = Vector2( 0.119639, 0.246836 )
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="chick/leg_right/white square3" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="shoulder_left" type="Node2D" parent="chick"]
+position = Vector2( -64.2534, -246.394 )
+rotation = 0.785397
+
+[node name="lower_left" type="Node2D" parent="chick/shoulder_left"]
+position = Vector2( -48.6772, -0.771973 )
+rotation = 0.705113
+
+[node name="white square2" type="Sprite" parent="chick/shoulder_left/lower_left"]
+self_modulate = Color( 0.619608, 0.47451, 0.4, 1 )
+position = Vector2( -34.8447, -0.214722 )
+scale = Vector2( 0.548925, 0.151477 )
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="chick/shoulder_left/lower_left/white square2" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="white square" type="Sprite" parent="chick/shoulder_left"]
+self_modulate = Color( 0.619608, 0.47451, 0.4, 1 )
+position = Vector2( -21.8043, -0.827515 )
+scale = Vector2( 0.421872, 0.151477 )
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="chick/shoulder_left/white square" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="white half circle" type="Sprite" parent="chick/shoulder_left"]
+self_modulate = Color( 0.619608, 0.47451, 0.4, 1 )
+position = Vector2( -48.6772, -0.771973 )
+scale = Vector2( 0.0379973, 0.0379973 )
+texture = ExtResource( 5 )
+
+[node name="shadow_3d" parent="chick/shoulder_left/white half circle" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="shoulder_right" type="Node2D" parent="chick"]
+position = Vector2( 60.9147, -242.779 )
+
+[node name="lower_right" type="Node2D" parent="chick/shoulder_right"]
+position = Vector2( 46.731, 0.0605469 )
+rotation = -1.06042
+scale = Vector2( 0.0363438, 0.0363438 )
+
+[node name="white square3" type="Sprite" parent="chick/shoulder_right/lower_right"]
+self_modulate = Color( 0.619608, 0.47451, 0.4, 1 )
+position = Vector2( -952.574, 1.7583 )
+scale = Vector2( 14.8765, 4.00631 )
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="chick/shoulder_right/lower_right/white square3" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="white square2" type="Sprite" parent="chick/shoulder_right"]
+self_modulate = Color( 0.619608, 0.47451, 0.4, 1 )
+position = Vector2( 18.3608, 0.0128174 )
+scale = Vector2( 0.447072, 0.145605 )
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="chick/shoulder_right/white square2" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="white half circle2" type="Sprite" parent="chick/shoulder_right"]
+self_modulate = Color( 0.619608, 0.47451, 0.4, 1 )
+position = Vector2( 46.731, 0.0605469 )
+rotation = 3.14159
+scale = Vector2( 0.0363438, 0.0363438 )
+texture = ExtResource( 5 )
+
+[node name="shadow_3d" parent="chick/shoulder_right/white half circle2" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="white circle" type="Sprite" parent="chick"]
+self_modulate = Color( 0.807843, 0.607843, 0.52549, 1 )
+position = Vector2( -1.22122, -256.639 )
+scale = Vector2( 0.295155, 0.295155 )
+z_index = 1
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="chick/white circle" instance=ExtResource( 25 )]
+
+[node name="beak" type="Node2D" parent="chick"]
+position = Vector2( 0.44312, -241.382 )
+scale = Vector2( 0.295, 0.245 )
+z_index = 2
+
+[node name="wingbody" type="Sprite" parent="chick/beak"]
+self_modulate = Color( 1, 0.654902, 0.25098, 1 )
+position = Vector2( -12.0554, 31.7186 )
+rotation = 1.89227
+scale = Vector2( 0.450435, 0.450435 )
+texture = ExtResource( 3 )
+
+[node name="shadow_3d" parent="chick/beak/wingbody" instance=ExtResource( 25 )]
+
+[node name="comb" type="Node2D" parent="chick"]
+position = Vector2( -1.22122, -256.361 )
+z_index = 1
+
+[node name="wingbody" type="Sprite" parent="chick/comb"]
+self_modulate = Color( 0.807843, 0.607843, 0.52549, 1 )
+position = Vector2( -24.7715, -85.6828 )
+rotation = 1.44026
+scale = Vector2( 0.187218, 0.187218 )
+texture = ExtResource( 3 )
+
+[node name="shadow_3d" parent="chick/comb/wingbody" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="wingbody2" type="Sprite" parent="chick/comb"]
+self_modulate = Color( 0.807843, 0.607843, 0.52549, 1 )
+position = Vector2( 3.61951, -80.2158 )
+rotation = 1.63168
+scale = Vector2( 0.130353, -0.130353 )
+texture = ExtResource( 3 )
+
+[node name="shadow_3d" parent="chick/comb/wingbody2" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="eyes" type="Node2D" parent="chick"]
+position = Vector2( -1.22122, -256.361 )
+scale = Vector2( 0.295155, 0.295155 )
+z_index = 1
+
+[node name="white circle" type="Sprite" parent="chick/eyes"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -131.467, -27.1748 )
+scale = Vector2( 0.218573, 0.218573 )
+texture = ExtResource( 2 )
+
+[node name="white circle2" type="Sprite" parent="chick/eyes"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 148.645, -30.3823 )
+scale = Vector2( 0.218573, 0.218573 )
+texture = ExtResource( 2 )
+
+[node name="detonator" type="Node2D" parent="."]
+
+[node name="pump" type="Node2D" parent="detonator"]
+position = Vector2( 0.44312, -192.934 )
+
+[node name="white square2" type="Sprite" parent="detonator/pump"]
+self_modulate = Color( 0.627451, 0.541176, 0.45098, 1 )
+position = Vector2( -0.459213, 64.3587 )
+scale = Vector2( 0.274775, 1.00639 )
+z_index = 2
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="detonator/pump/white square2" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="white square3" type="Sprite" parent="detonator/pump"]
+self_modulate = Color( 0.627451, 0.541176, 0.45098, 1 )
+position = Vector2( -0.707768, 0.327214 )
+scale = Vector2( 1.28033, 0.239457 )
+z_index = 2
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="detonator/pump/white square3" instance=ExtResource( 25 )]
+z_index = -1
+
+[node name="left_hand" type="Sprite" parent="detonator/pump"]
+self_modulate = Color( 0.619608, 0.47451, 0.4, 1 )
+position = Vector2( -89.467, 0.45874 )
+scale = Vector2( 0.0960131, 0.0960131 )
+z_index = 3
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="detonator/pump/left_hand" instance=ExtResource( 25 )]
+
+[node name="right_hand" type="Sprite" parent="detonator/pump"]
+self_modulate = Color( 0.619608, 0.47451, 0.4, 1 )
+position = Vector2( 82.6392, 1.69507 )
+scale = Vector2( 0.0960131, 0.0960131 )
+z_index = 3
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="detonator/pump/right_hand" instance=ExtResource( 25 )]
+
+[node name="white square" type="Sprite" parent="detonator"]
+self_modulate = Color( 0.796078, 0.247059, 0.270588, 1 )
+position = Vector2( -0.275208, -50.6335 )
+scale = Vector2( 1.39504, 0.796583 )
+z_index = 4
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="detonator/white square" instance=ExtResource( 25 )]
+
+[node name="character_hider" parent="." instance=ExtResource( 26 )]
+margin_left = -130.0
+margin_top = -367.0
+margin_right = 124.0
+
+[node name="on" parent="character_hider" index="1"]
+bus = "Master"
+
+[node name="off" parent="character_hider" index="2"]
+bus = "Master"
+
+[editable path="character_hider"]

@@ -1,0 +1,100 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://resources/shapes/white circle.png" type="Texture" id=1]
+[ext_resource path="res://interface elements/toggle/toggle.gd" type="Script" id=2]
+[ext_resource path="res://interface elements/shared_sounds/tick.wav" type="AudioStream" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 34.4693, 17.8245 )
+
+[node name="toggle" type="Node2D"]
+position = Vector2( -1.41962, 0.0156555 )
+script = ExtResource( 2 )
+off_back = Color( 0.270588, 0.270588, 0.270588, 1 )
+off_indicator = Color( 0.752941, 0.752941, 0.752941, 1 )
+on_back = Color( 0.254902, 0.643137, 0.898039, 1 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 35.2831, 17.7026 )
+shape = SubResource( 1 )
+
+[node name="sides" type="NinePatchRect" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 0.732422
+margin_top = -0.732666
+margin_right = 986.732
+margin_bottom = 511.267
+rect_scale = Vector2( 0.07, 0.07 )
+texture = ExtResource( 1 )
+patch_margin_left = 256
+patch_margin_top = 256
+patch_margin_right = 256
+patch_margin_bottom = 256
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="field" type="NinePatchRect" parent="."]
+margin_left = 0.244141
+margin_top = 0.12207
+margin_right = 986.244
+margin_bottom = 512.122
+rect_scale = Vector2( 0.07, 0.07 )
+texture = ExtResource( 1 )
+patch_margin_left = 256
+patch_margin_top = 256
+patch_margin_right = 256
+patch_margin_bottom = 256
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="indicator" type="Node2D" parent="."]
+position = Vector2( -3.05176e-05, 0.732544 )
+
+[node name="shadow" type="NinePatchRect" parent="indicator"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 517.0
+margin_bottom = 517.0
+rect_scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 1 )
+patch_margin_left = 256
+patch_margin_top = 256
+patch_margin_right = 256
+patch_margin_bottom = 256
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="top" type="NinePatchRect" parent="indicator"]
+self_modulate = Color( 0, 1, 0.658824, 1 )
+margin_left = 7.0
+margin_top = 3.0
+margin_right = 519.0
+margin_bottom = 515.0
+rect_scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 1 )
+patch_margin_left = 256
+patch_margin_top = 256
+patch_margin_right = 256
+patch_margin_bottom = 256
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="off" type="Position2D" parent="."]
+position = Vector2( 0.366272, -0.12207 )
+
+[node name="on" type="Position2D" parent="."]
+position = Vector2( 31.7425, 0.122101 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_Area2D_mouse_exited"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bding.wav-095e2e5767541d3bfd75d03e17ff9d6f.sample"
+
+[deps]
+
+source_file="res://characters/bell/bding.wav"
+dest_files=[ "res://.import/bding.wav-095e2e5767541d3bfd75d03e17ff9d6f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

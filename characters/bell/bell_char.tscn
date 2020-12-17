@@ -1,0 +1,140 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://characters/bell/bell_char.gd" type="Script" id=1]
+[ext_resource path="res://resources/shapes/white circle.png" type="Texture" id=2]
+[ext_resource path="res://resources/shapes/white square.png" type="Texture" id=3]
+[ext_resource path="res://resources/shapes/triangle.png" type="Texture" id=4]
+[ext_resource path="res://characters/shadows/shadow_3d.tscn" type="PackedScene" id=5]
+[ext_resource path="res://characters/character_hider/character_hider.tscn" type="PackedScene" id=6]
+[ext_resource path="res://characters/bell/bding.wav" type="AudioStream" id=7]
+
+[node name="bell_char" type="Node2D"]
+position = Vector2( 250, 182 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -64.5852 ]
+}
+
+[node name="rope" type="Node2D" parent="."]
+position = Vector2( 286.981, -7.75623 )
+
+[node name="white square" type="Sprite" parent="rope"]
+self_modulate = Color( 0.839216, 0.466667, 0, 1 )
+position = Vector2( -0.891174, 49.7022 )
+scale = Vector2( 0.225824, 0.973868 )
+texture = ExtResource( 3 )
+
+[node name="shadow_3d" parent="rope/white square" instance=ExtResource( 5 )]
+
+[node name="bell" type="Node2D" parent="rope"]
+position = Vector2( -0.561859, 78.0592 )
+rotation = 0.00372046
+
+[node name="white square" type="Sprite" parent="rope/bell"]
+self_modulate = Color( 0.917647, 0.65098, 0.247059, 1 )
+position = Vector2( 1.82297, 130.706 )
+scale = Vector2( 1.41768, 0.959849 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="shadow_3d" parent="rope/bell/white square" instance=ExtResource( 5 )]
+z_index = -1
+
+[node name="white circle" type="Sprite" parent="rope/bell"]
+self_modulate = Color( 0.917647, 0.65098, 0.247059, 1 )
+position = Vector2( 1.91229, 77.6415 )
+scale = Vector2( 0.357159, 0.357159 )
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="rope/bell/white circle" instance=ExtResource( 5 )]
+z_index = -1
+
+[node name="triangle" type="Sprite" parent="rope/bell"]
+self_modulate = Color( 0.917647, 0.65098, 0.247059, 1 )
+position = Vector2( -0.945212, 138.441 )
+scale = Vector2( 0.558831, 0.405008 )
+texture = ExtResource( 4 )
+
+[node name="shadow_3d" parent="rope/bell/triangle" instance=ExtResource( 5 )]
+z_index = -1
+
+[node name="tongue" type="Node2D" parent="rope/bell"]
+position = Vector2( -0.387787, 93.3588 )
+z_index = -2
+
+[node name="white circle" type="Sprite" parent="rope/bell/tongue"]
+self_modulate = Color( 0.839216, 0.466667, 0, 1 )
+position = Vector2( 1.87598, 183.469 )
+scale = Vector2( 0.0728305, 0.0728305 )
+z_index = -1
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="rope/bell/tongue/white circle" instance=ExtResource( 5 )]
+z_index = -1
+
+[node name="white square" type="Sprite" parent="rope/bell/tongue"]
+self_modulate = Color( 0.839216, 0.466667, 0, 1 )
+position = Vector2( 1.9859, 98.9578 )
+scale = Vector2( 0.28843, 1.32073 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="shadow_3d" parent="rope/bell/tongue/white square" instance=ExtResource( 5 )]
+z_index = -1
+
+[node name="eyes" type="Node2D" parent="rope/bell"]
+
+[node name="white circle" type="Sprite" parent="rope/bell/eyes"]
+position = Vector2( -98.5282, 123.997 )
+scale = Vector2( 0.132396, 0.132396 )
+z_index = 1
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="rope/bell/eyes/white circle" instance=ExtResource( 5 )]
+
+[node name="white circle2" type="Sprite" parent="rope/bell/eyes"]
+position = Vector2( 93.5809, 125.643 )
+scale = Vector2( 0.132396, 0.132396 )
+z_index = 1
+texture = ExtResource( 2 )
+
+[node name="shadow_3d" parent="rope/bell/eyes/white circle2" instance=ExtResource( 5 )]
+z_index = -2
+
+[node name="pupils" type="Node2D" parent="rope/bell/eyes"]
+position = Vector2( -0.191986, 126.715 )
+
+[node name="white circle3" type="Sprite" parent="rope/bell/eyes/pupils"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -98.6331, -2.04102 )
+rotation = -4.39647e-10
+scale = Vector2( 0.090181, 0.090181 )
+z_index = 2
+texture = ExtResource( 2 )
+
+[node name="white circle4" type="Sprite" parent="rope/bell/eyes/pupils"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 94.0076, 0.201904 )
+rotation = -4.39647e-10
+scale = Vector2( 0.090181, 0.090181 )
+z_index = 2
+texture = ExtResource( 2 )
+
+[node name="character_hider" parent="." instance=ExtResource( 6 )]
+margin_left = 148.0
+margin_top = 6.0
+margin_right = 424.0
+margin_bottom = 364.0
+
+[node name="on" parent="character_hider" index="1"]
+bus = "Master"
+
+[node name="off" parent="character_hider" index="2"]
+bus = "Master"
+
+[node name="ding" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -3.285
+
+[editable path="character_hider"]
