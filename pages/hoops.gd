@@ -16,10 +16,6 @@ func _ready():
 #	pass
 
 
-func _on_slider_dragged(value):
-	$Node2D.position = lerp(Vector2.ZERO,$Position2D.position,value)
-	pass # Replace with function body.
-
-
-func _on_twitter_clicked():
+func _on_button_clicked():
+	OS.shell_open("https://hoopsdoggit.itch.io/")
 	pass # Replace with function body.

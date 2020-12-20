@@ -16,10 +16,16 @@ func _ready():
 #	pass
 
 
-func _on_slider_dragged(value):
-	$Node2D.position = lerp(Vector2.ZERO,$Position2D.position,value)
+func _on_button_clicked():
+	OS.shell_open("https://sabrina-tvband.itch.io/")
+	pass # Replace with function body.
+
+
+func _on_music_clicked():
+	OS.shell_open("https://tvband.bandcamp.com/")
 	pass # Replace with function body.
 
 
 func _on_twitter_clicked():
+	OS.shell_open("https://twitter.com/sabrinatvband")
 	pass # Replace with function body.

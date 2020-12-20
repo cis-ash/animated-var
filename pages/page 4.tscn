@@ -1,0 +1,142 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://pages/page.tscn" type="PackedScene" id=1]
+[ext_resource path="res://pages/hoops.gd" type="Script" id=2]
+[ext_resource path="res://resources/fonts/SpaceMono-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://resources/fonts/SpaceMono-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://interface elements/slider/slider.tscn" type="PackedScene" id=6]
+[ext_resource path="res://pages/page 2.gd" type="Script" id=7]
+[ext_resource path="res://interface elements/button/button.tscn" type="PackedScene" id=816]
+[ext_resource path="res://resources/fonts/editor_dynamic_font.tres" type="DynamicFont" id=817]
+
+[sub_resource type="DynamicFont" id=1]
+size = 57
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+use_mipmaps = true
+font_data = ExtResource( 5 )
+
+[node name="page 2" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]
+
+[node name="NinePatchRect2" parent="Node2D" index="0"]
+margin_bottom = 3300.0
+
+[node name="NinePatchRect" parent="Node2D" index="1"]
+margin_left = 130.0
+margin_top = 10.0
+margin_right = 874.0
+margin_bottom = 3280.0
+
+[node name="Label" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 150.0
+margin_top = 20.0
+margin_right = 1025.0
+margin_bottom = 281.0
+rect_scale = Vector2( 0.812847, 0.812847 )
+custom_fonts/font = SubResource( 1 )
+text = "A Short Foray Into 
+Tool Development In Unity
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 150.0
+margin_top = 160.0
+margin_right = 1944.0
+margin_bottom = 9532.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = SubResource( 2 )
+text = "Hi! I’m Jacob and I’m making a silly adventure shooter called Momentary Hotdog. One of the more interesting aspects of this project is the tech I’ve built to help me design levels so I thought I’d walk you through a bit of the process and what it allows me to do.
+
+When starting Momentary Hotdog I knew I wanted to make a block based world because I love the flexibility that tile based level design affords. As soon as I started duplicating blocks around to make the first level though I knew that creating levels by hand was going to be untenable so I turned to Ogmo Editor.
+
+Ogmo Editor is a super simple 2d level editor which outputs levels as json files. I knew Unity could ingest json files so it’d be easy to make some kind of reader of the output levels. I set my Ogmo project up to use a cell based grid so that each tile snaps to discrete integer position values. And each layer in Ogmo represents the next vertical slice of level so I design each level from a top down perspective. Then in Unity I built a component paired with a custom Editor that took a level file, a bunch of objects to make the level from and a button which basically loops through the cell indices and spawned the appropriate block in the appropriate place in the world. Where this tool started getting interesting was when I decided that I wanted enemies in the game to be able to traverse some of the vertical elements of my levels. 
+
+Unity’s built in Off Mesh Link functionality is fine if all you need from your AI agents is to be able to jump across a horizontal gap that is exactly the same height as the ground it’s currently on - or down to some ground which is lower. Jumping up is right out. I’ll spare you the story of the three weeks i spent rolling my own tech as it turns out that hidden inside the fine print of the Unity manual is a link to a git repo with some additional components that add the exact functionality that I needed… 
+
+Now armed with the fandangled Nav Mesh Link (NML) components I could create ramps between blocks that ai agents could traverse and give the ai agents Agent Link Mover components which allow you to describe the vertical trajectory of an agent as they travel (in my case jump) along the NML. But the problem I then encountered was that if every block in the world has an NML on each side the game scene become too noisy to even looking at, let alone do anything with.The only blocks that needed NMLs were the blocks that were on the edges of platforms and had a lower block around them but if every block in the world is being instantiated by my Ogmo Importer I needed some kind of behaviour at instantiation that checked if a NML was necessary and only add it in that case. 
+
+Enter the interface. 
+C# has a handy concept called the interface. You’ve probably seen them before, especially if you’ve looked under the hood of Unity’s button logic and mouse events. Basically interfaces are what we use to attach a certain behaviour to multiple conceptually distinct objects. For example, you could have a game scene with a dog, a consumable and check-point. All of these objects are completely different kinds of objects so if you’ve set up inheritance they all will have very different behaviours. But what if you want them all to be able break? By using an interface you can add the breakable behaviour to each of these objects. They can all define exactly how they break but the thing is, if they implement the breakable interface then they must implement all of the methods which breakable contains.
+
+My implementation
+My solution to solving the problem of having Nav Mesh Links everywhere was to create an interface called IOgmoInit. Inside that was one method called OgmoInit() which would be called from my importer, once after the entire level was instantiated. 
+
+Once I had the interface set up and being executed on import I made a class called NMLSetter (which obviously implemented IOgmoInit) and in OgmoInit() and for each side of each cube it checks if there is a block next to itself, and if there isn’t it turns on the NML. Because of this, an entire level - no matter what changes I make in the iteration process - can change and I know that an ai agent will be able to move anywhere they wish without any manual setup.
+
+Here’s a quick list of other uses I found for my OgmoInit() class:
+• Assigning a material based on where in world space a gameObject is (creating the checkerboard pattern)
+• Firing raycasts from instantiated enemies and moving them to the ground they hit so that I didn’t have to manually move them.
+• Instantiating a random grass clump on ground cubes.
+• Randomising the rotation of a block.
+
+And once I start adding more detailed assets and doodads, something I’d like to do is to change the look of a block based on its neighbours automatically.
+
+So now with all this tech I can iterate on level design, enemy placement at lighting speed in Ogmo in as much time as it takes to ctrl + S to save, alt + tab to get to Unity, click the button to generate the level then ctrl + P to play, I can be playtesting a level without a single iota of manual setup!
+
+I hope this little adventure has shown just how powerful a little bit of tool dev can speed up your workflow or sparked some interest in tool dev!
+
+Happy hunting!
+
+
+
+
+
+
+
+
+
+
+
+
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hoops" type="Node2D" parent="Node2D"]
+position = Vector2( -10, 170 )
+script = ExtResource( 2 )
+
+[node name="Label10" type="Label" parent="Node2D/hoops"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 150.0
+margin_top = 2960.0
+margin_right = 1960.0
+margin_bottom = 4457.0
+rect_scale = Vector2( 0.393682, 0.368694 )
+custom_fonts/font = ExtResource( 817 )
+text = "Article by Jacob Grossman"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button" parent="Node2D/hoops" instance=ExtResource( 816 )]
+margin_left = 152.0
+margin_top = 3010.0
+margin_right = 1343.0
+margin_bottom = 3160.0
+rect_scale = Vector2( 0.589049, 0.589049 )
+text = "itch.io"
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 0, -2380 )
+scale = Vector2( 0.515607, 2.10379 )
+
+[node name="slider" parent="." instance=ExtResource( 6 )]
+position = Vector2( 910, 270 )
+[connection signal="clicked" from="Node2D/hoops/button" to="Node2D/hoops" method="_on_button_clicked"]
+[connection signal="dragged" from="slider" to="." method="_on_slider_dragged"]
+
+[editable path="Node2D"]

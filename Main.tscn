@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://pages/page 1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://main_camera.gd" type="Script" id=2]
@@ -6,9 +6,17 @@
 [ext_resource path="res://interface elements/button/button.tscn" type="PackedScene" id=4]
 [ext_resource path="res://pages/page 2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://pages/page 3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://pages/page 4.tscn" type="PackedScene" id=7]
+[ext_resource path="res://pages/page 5.tscn" type="PackedScene" id=8]
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 3 )
+
+[node name="page 5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4000, 0 )
+
+[node name="page 4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3000, 0 )
 
 [node name="page 3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2000, 0 )
@@ -34,6 +42,17 @@ up_color = Color( 0.929412, 0.333333, 0.517647, 1 )
 down_color = Color( 0.945098, 0.713726, 0.329412, 1 )
 release_color = Color( 0.156863, 0.866667, 0.596078, 1 )
 
+[node name="quit" parent="main_camera" instance=ExtResource( 4 )]
+margin_left = -491.5
+margin_top = 410.0
+margin_right = -291.5
+margin_bottom = 560.0
+rect_scale = Vector2( 0.5, 0.5 )
+text = "X"
+up_color = Color( 1, 0, 0.309804, 1 )
+down_color = Color( 0.945098, 0.713726, 0.329412, 1 )
+release_color = Color( 0.929412, 0.333333, 0.517647, 1 )
+
 [node name="right" parent="main_camera" instance=ExtResource( 4 )]
 margin_left = 390.0
 margin_top = -484.0
@@ -45,4 +64,5 @@ up_color = Color( 0.929412, 0.333333, 0.517647, 1 )
 down_color = Color( 0.945098, 0.713726, 0.329412, 1 )
 release_color = Color( 0.156863, 0.866667, 0.596078, 1 )
 [connection signal="clicked" from="main_camera/left" to="." method="_on_left_clicked"]
+[connection signal="clicked" from="main_camera/quit" to="." method="_on_left2_clicked"]
 [connection signal="clicked" from="main_camera/right" to="." method="_on_right_clicked"]

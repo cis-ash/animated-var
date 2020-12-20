@@ -28,3 +28,8 @@ func _on_right_clicked():
 func _on_left_clicked():
 	$main_camera.page -= 1;
 	pass # Replace with function body.
+
+
+func _on_left2_clicked():
+	get_tree().quit()
+	pass # Replace with function body.

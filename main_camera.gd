@@ -3,7 +3,7 @@ var page = 0
 var pos = 500
 var speed = 0
 var min_page = 0
-var max_page = 2
+var max_page = 4
 
 
 # Declare member variables here. Examples:
@@ -27,3 +27,7 @@ func _process(delta):
 		page = max_page
 	global_position.x = pos
 	pass
+
+
+func _on_left2_clicked():
+	pass # Replace with function body.
